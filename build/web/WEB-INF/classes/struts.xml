@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>   
+    
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="model.resources.i18n.application" />
+    <constant name="struts.i18n.reload" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.serve.static.browserCache" value="false" />
+    <constant name="struts.configuration.xml.reload" value="true" />
+    <constant name="struts.ognl.enableExpressionCache" value="false" />       
+    
+    <!-- servlets -->        
+    <constant name="struts.action.excludePattern" value="/alarms,/alarmDispatcher,/registerDispatcher" />               
+    
+    <package name="default" extends="struts-default">
+        
+        <action name="stations" class="actions.stations.Stations">
+            <result name="success">/pages/stations/stations.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stations.jsp</result>
+        </action>
+        
+        <action name="addClick" class="actions.stations.AddClick">
+            <result name="success">/pages/stations/stations.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stations.jsp</result>
+        </action>
+        
+        <action name="stationsByClick" class="actions.stations.StationsByClick">
+            <result name="success">/pages/stations/stationsByClick.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stationsByClick.jsp</result>
+        </action>
+        
+        <action name="stationsByOrder" class="actions.stations.StationsByOrder">
+            <result name="success">/pages/stations/stationsByOrder.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stationsByOrder.jsp</result>
+        </action>        
+                                                                                                       
+    </package>    
+    
+</struts>

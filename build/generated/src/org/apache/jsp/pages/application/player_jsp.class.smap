@@ -1,0 +1,10 @@
+SMAP
+player_jsp.java
+JSP
+*S JSP
+*F
++ 0 player.jsp
+pages/application/player.jsp
+*L
+1,47:44
+*E

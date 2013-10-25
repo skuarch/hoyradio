@@ -1,0 +1,10 @@
+SMAP
+scripts_jsp.java
+JSP
+*S JSP
+*F
++ 0 scripts.jsp
+pages/application/scripts.jsp
+*L
+1,7:44
+*E
