@@ -42,7 +42,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("<div style=\"padding-top: 60px; padding-left: 20px; background: url('img/circle.png') no-repeat no-repeat center; width: 346px; height: 254px;\">\n");
-      out.write("    <img id=\"player-img\" src=\"img/play.png\"/>\n");
+      out.write("    <img id=\"player-img\" src=\"img/play.png\" width=\"128\" height=\"128\"/>\n");
       out.write("</div>\n");
       out.write("\n");
       out.write("<div style=\"visibility:hidden;\">\n");

@@ -78,7 +78,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_0 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_property_0.setPageContext(_jspx_page_context);
     _jspx_th_s_property_0.setParent(null);
-    _jspx_th_s_property_0.setValue("getText('application.window.title')");
+    _jspx_th_s_property_0.setValue("getText('text1')");
     int _jspx_eval_s_property_0 = _jspx_th_s_property_0.doStartTag();
     if (_jspx_th_s_property_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_0);

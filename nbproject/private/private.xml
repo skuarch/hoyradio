@@ -5,6 +5,11 @@
         <file>file:/home/skuarch/NetBeansProjects/hoyradio/src/java/struts.xml</file>
         <file>file:/home/skuarch/NetBeansProjects/hoyradio/src/java/model/resources/i18n/application.properties</file>
         <file>file:/home/skuarch/NetBeansProjects/hoyradio/web/js/functions.js</file>
-        <file>file:/home/skuarch/NetBeansProjects/hoyradio/src/java/actions/stations/StationsByClick.java</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/web/pages/stations/stations.jsp</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/src/java/actions/stations/Stations.java</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/src/java/model/beans/Station.java</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/web/pages/application/header.jsp</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/web/index.jsp</file>
+        <file>file:/home/skuarch/NetBeansProjects/hoyradio/web/pages/application/player.jsp</file>
     </open-files>
 </project-private>

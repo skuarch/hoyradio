@@ -2,23 +2,27 @@ var loader = "<img src='img/ajax-loader.gif'/>";
 var start = 0;
 var maxResults = 25;
 var playerStatus = "stop";
+var worker1 = null, URL = window.URL || (window.webkitURL);
+window.URL = URL;
 
-$(document).ready(function() {    
-    player("http://129.21.180.18:8001/pirate-192", "stop", 1)
-    stations(0, 25); 
+$(document).ready(function() {
+
+    player("http://129.21.180.18:8001/pirate-192", "stop", 1);
+    stations(0, 25);
     getStationsByClick();
     getStationsByOrder();
+
 });
 
 //==============================================================================
-function addClick(g){
-    $.ajax({        
-        url:"addClick",
-        type:"POST",
-        async:false,
-        data:{
-            g:g
-        }      
+function addClick(g) {
+    $.ajax({
+        url: "addClick",
+        type: "POST",
+        async: false,
+        data: {
+            g: g
+        }
     });
 } // end addClick
 
@@ -41,38 +45,36 @@ function fooTable() {
 } // end footable
 
 //==============================================================================
-function getStationsByClick(){
-   
+function getStationsByClick() {
+
     $.ajax({
-        
-        url:"stationsByClick",
-        type:"POST",
-        data:{order:"desc"},
-        success:function(data){
+        url: "stationsByClick",
+        type: "POST",
+        data: {order: "desc"},
+        success: function(data) {
             $("#stationsByClick").html(data);
-        },error:function(){            
+        }, error: function() {
         }
-        
+
     });
-    
+
 } // end getStationsByClick
 
 //==============================================================================
-function getStationsByOrder(){
-    
+function getStationsByOrder() {
+
     $.ajax({
-        
-        url:"stationsByOrder",
-        type:"POST",
-        data:{order:"desc"},
-        success:function(data){
+        url: "stationsByOrder",
+        type: "POST",
+        data: {order: "desc"},
+        success: function(data) {
             $("#stationsByOrder").html(data);
-        },error:function(){
-            
+        }, error: function() {
+
         }
-        
+
     });
-    
+
 } // end getStationsByClick
 
 //==============================================================================
@@ -84,37 +86,37 @@ function player(e, t, n) {
 
     $("#jquery_jplayer_1").jPlayer("stop");
     $("#jquery_jplayer_1").jPlayer("destroy");
-    $("#jquery_jplayer_1").jPlayer( "volume", 1);     
+    $("#jquery_jplayer_1").jPlayer("volume", 1);
 
-    if (n == 1) {
+    if (n === 1) {
         e += "/;stream/1";
         $("#jquery_jplayer_1").jPlayer({
             ready: function() {
                 $(this).jPlayer("setMedia", {
                     mp3: e
-                }).jPlayer(t)
+                }).jPlayer(t);
             },
             errorAlerts: false,
             swfPath: "js/",
             supplied: "mp3,m4a,aacp,oga",
             solution: "flash,html",
             wmode: "window",
-            volume:1
-        })
+            volume: 1
+        });
     } else {
         $("#jquery_jplayer_1").jPlayer({
             ready: function() {
                 $(this).jPlayer("setMedia", {
                     oga: e
-                }).jPlayer(t)
+                }).jPlayer(t);
             },
             errorAlerts: false,
             swfPath: "js/",
             supplied: "oga",
             solution: "flash,html",
             wmode: "window",
-            volume:1
-        })
+            volume: 1
+        });
     }
 
     //stationInformation(e.split(":")[1], e.split(":")[2]);
@@ -128,17 +130,17 @@ function playStation(t, e, n, g) {
     player(t, e, n);
     setPlayer("play");
     addClick(g);
-    
+
 } // end playStation
 
 //==============================================================================
 function setPlayer(command) {
 
-    if (command == "" || command == undefined) {
+    if (command === "" || command === undefined) {
         return;
     }
 
-    if (command == "play" || command == "pause" || command == "stop" || command == "destroy") {
+    if (command === "play" || command === "pause" || command === "stop" || command === "destroy") {
         $("#jquery_jplayer_1").jPlayer(command);
         playerStatus = command;
     }
@@ -199,12 +201,12 @@ function stationInformation(t, e) {
 $("#player-img").click(
         function() {
 
-            if (playerStatus == "stop") {
+            if (playerStatus === "stop") {
                 setPlayer("play");
                 playerStatus = "play";
                 $("#player-img").attr("src", "img/play.png");
             } else {
-                if (playerStatus == "pause") {
+                if (playerStatus === "pause") {
                     setPlayer("play");
                     playerStatus = "play";
                     $("#player-img").attr("src", "img/play.png");
@@ -217,10 +219,10 @@ $("#player-img").click(
 
         }
 ); // end 
-    
+
 //==============================================================================    
-function toggleStation(){
-    
+function toggleStation() {
+
     $("#st").toggleClass("alert-warning");
-    
+
 } // end toggleStation

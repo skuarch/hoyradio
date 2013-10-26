@@ -1,5 +1,5 @@
 <div style="padding-top: 60px; padding-left: 20px; background: url('img/circle.png') no-repeat no-repeat center; width: 346px; height: 254px;">
-    <img id="player-img" src="img/play.png"/>
+    <img id="player-img" src="img/play.png" width="128" height="128"/>
 </div>
 
 <div style="visibility:hidden;">
