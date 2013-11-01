@@ -40,9 +40,9 @@ function beforeStations() {
 } // end nextStations
 
 //==============================================================================
-function fooTable() {
-    $('.footable').footable();
-} // end footable
+function cancelFormSubmission(){
+    return false;
+} // end cancelFormSubmission
 
 //==============================================================================
 function getStationsByClick() {
@@ -168,7 +168,7 @@ function stations(start, maxResults) {
             maxResults: maxResults
         }, success: function(data) {
             $("#resultsStations").html(data);
-            fooTable();
+            //fooTable();
         }, error: function(request, status, error) {
             //alert(error);
         }
@@ -226,3 +226,28 @@ function toggleStation() {
     $("#st").toggleClass("alert-warning");
 
 } // end toggleStation
+
+//==============================================================================
+function search() {
+
+    var stringToSearch = $("#searchField").val();
+
+    if (stringToSearch === undefined || stringToSearch === "" || stringToSearch === "undefined" || stringToSearch.length < 3) {
+        return;
+    }
+    stringToSearch = escape(stringToSearch);
+
+    $("#resultsStations").html(loader);
+    $.ajax({
+        url: "search",
+        data: {stringToSearch: stringToSearch},
+        type: "POST",
+        success: function(data) {
+            $("#resultsStations").html(data);
+        }, error: function() {
+
+        }
+
+    });
+
+} // end search

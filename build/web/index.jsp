@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Aug 5, 2013, 12:06:57 PM
-    Author     : skuarch
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
@@ -50,6 +44,7 @@
                             </div>
                         </div>
                     </div>
+                            
                 </div>
 
                 <div class="col-lg-4 text-center">

@@ -43,11 +43,10 @@ public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("<script type=\"text/javascript\" src=\"js/jquery-1.10.2.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/functions.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"js/footable-0.1.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/alertify.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/jplayer.min-2.4.0.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"js/jquery.shoutcast.min.js\"></script>");
+      out.write("<!--<script type=\"text/javascript\" src=\"js/jquery.shoutcast.min.js\"></script>-->");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

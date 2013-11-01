@@ -53,12 +53,14 @@ public final class subnavigation_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("            <a class=\"navbar-brand\" href=\"#\">Hoy Radio</a>\n");
       out.write("        </div>        \n");
       out.write("        <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n");
-      out.write("            <form class=\"navbar-form navbar-left\" role=\"search\">\n");
+      out.write("\n");
+      out.write("            <form class=\"navbar-form navbar-right\" onsubmit=\"return cancelFormSubmission();\">\n");
       out.write("                <div class=\"form-group\">\n");
-      out.write("                    <input type=\"text\" class=\"form-control\" placeholder=\"buscar\">\n");
+      out.write("                    <input id=\"searchField\" type=\"text\" placeholder=\"buscar\" class=\"form-control\">\n");
       out.write("                </div>\n");
-      out.write("                <button type=\"submit\" class=\"btn btn-success\">Buscar estaciones</button>\n");
-      out.write("            </form>           \n");
+      out.write("                <input type=\"button\" class=\"btn btn-success\" value=\"Buscar\" onclick=\"search();\" />\n");
+      out.write("            </form>\n");
+      out.write("\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
       out.write("</div>");

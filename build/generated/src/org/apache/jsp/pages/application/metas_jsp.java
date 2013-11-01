@@ -42,7 +42,12 @@ public final class metas_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+      out.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("<meta http-equiv=\"x-dns-prefetech-control\" content=\"on\">\n");
+      out.write("<meta name=\"description\" content=\"escucha estaciones de radio en vivo por internet, radio online gratis\" />\n");
+      out.write("<meta name=\"keywords\" content=\"radio internet,escuchar radio,radio gratis,radio,radios,estaciones de radio,emisoras radio,fm,am\" />\n");
+      out.write("<meta name=\"author\" content=\"skuarch\"/>\n");
+      out.write("<meta name=\"robots\" content=\"index, follow\" />");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

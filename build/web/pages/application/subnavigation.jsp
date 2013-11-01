@@ -10,12 +10,14 @@
             <a class="navbar-brand" href="#">Hoy Radio</a>
         </div>        
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <form class="navbar-form navbar-left" role="search">
+
+            <form class="navbar-form navbar-right" onsubmit="return cancelFormSubmission();">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="buscar">
+                    <input id="searchField" type="text" placeholder="buscar" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-success">Buscar estaciones</button>
-            </form>           
+                <input type="button" class="btn btn-success" value="Buscar" onclick="search();" />
+            </form>
+
         </div>
     </div>
 </div>

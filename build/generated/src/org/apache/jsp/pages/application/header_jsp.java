@@ -52,6 +52,8 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("<link rel=\"dns-prefetech\" href=\"http://www.hoyradio.com\"/>\n");
+      out.write("<link rel=\"dns-prefetech\" href=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"/>\n");
       out.write("<title>");
       if (_jspx_meth_s_property_0(_jspx_page_context))
         return;

@@ -53,8 +53,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>        \n");
@@ -114,6 +112,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
+      out.write("                            \n");
       out.write("                </div>\n");
       out.write("\n");
       out.write("                <div class=\"col-lg-4 text-center\">\n");

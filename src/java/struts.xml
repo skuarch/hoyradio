@@ -6,7 +6,7 @@
     
 <struts>   
     
-    <constant name="struts.devMode" value="true" />
+    <constant name="struts.devMode" value="tru" />
     <constant name="struts.custom.i18n.resources" value="model.resources.i18n.application" />
     <constant name="struts.i18n.reload" value="true" />
     <constant name="struts.i18n.encoding" value="UTF-8" />
@@ -29,6 +29,12 @@
             <result name="success">/pages/stations/stations.jsp</result>
             <result name="error">/pages/application/error.jsp</result>
             <result name="input">/pages/stations/stations.jsp</result>
+        </action>
+        
+        <action name="search" class="actions.stations.Search">
+            <result name="success">/pages/stations/stationsSearched.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stationsByClick.jsp</result>
         </action>
         
         <action name="stationsByClick" class="actions.stations.StationsByClick">
