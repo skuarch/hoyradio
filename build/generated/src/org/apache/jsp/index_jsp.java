@@ -112,7 +112,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
-      out.write("                            \n");
+      out.write("\n");
       out.write("                </div>\n");
       out.write("\n");
       out.write("                <div class=\"col-lg-4 text-center\">\n");
@@ -151,8 +151,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"row\">\n");
       out.write("                <div class=\"col-lg-12\">        \n");
       out.write("                    <div class=\"panel panel-default _1\">\n");
-      out.write("                        <div id=\"resultsStations\" style=\"height: 500px\" class=\"_1\">\n");
-      out.write("                          \n");
+      out.write("                        <div id=\"resultsStations\">\n");
+      out.write("\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");
@@ -167,7 +167,22 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_s_include_7(_jspx_page_context))
         return;
       out.write("   \n");
+      out.write("        <script>\n");
+      out.write("            (function(i, s, o, g, r, a, m) {\n");
+      out.write("                i['GoogleAnalyticsObject'] = r;\n");
+      out.write("                i[r] = i[r] || function() {\n");
+      out.write("                    (i[r].q = i[r].q || []).push(arguments)\n");
+      out.write("                }, i[r].l = 1 * new Date();\n");
+      out.write("                a = s.createElement(o),\n");
+      out.write("                        m = s.getElementsByTagName(o)[0];\n");
+      out.write("                a.async = 1;\n");
+      out.write("                a.src = g;\n");
+      out.write("                m.parentNode.insertBefore(a, m)\n");
+      out.write("            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');\n");
       out.write("\n");
+      out.write("            ga('create', 'UA-45347943-1', 'hoyradio.com');\n");
+      out.write("            ga('send', 'pageview');\n");
+      out.write("        </script>\n");
       out.write("    </body>\n");
       out.write("\n");
       out.write("</html>");

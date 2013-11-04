@@ -11,11 +11,11 @@
         </div>        
         <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-            <form class="navbar-form navbar-right" onsubmit="return cancelFormSubmission();">
+            <form class="navbar-form navbar-right" onsubmit="return cancelFormSubmission();" action="#">
                 <div class="form-group">
-                    <input id="searchField" type="text" placeholder="buscar" class="form-control">
+                    <input id="searchField" type="text" placeholder="buscar" class="form-control input-lg">
                 </div>
-                <input type="button" class="btn btn-success" value="Buscar" onclick="search();" />
+                <input type="button" class="btn btn-success btn-lg" value="Buscar" onclick="search();" />
             </form>
 
         </div>

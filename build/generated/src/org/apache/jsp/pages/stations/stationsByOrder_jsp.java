@@ -94,12 +94,16 @@ public final class stationsByOrder_jsp extends org.apache.jasper.runtime.HttpJsp
         out.write("    <a href=\"javascript:;\" onclick=\"playStation('");
         if (_jspx_meth_s_property_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
-        out.write("', 'play', 1,'");
+        out.write("', 'play', ");
         if (_jspx_meth_s_property_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+          return true;
+        out.write(',');
+        out.write('\'');
+        if (_jspx_meth_s_property_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("');\">    \n");
         out.write("        ");
-        if (_jspx_meth_s_property_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+        if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
         out.write("    </a>\n");
@@ -145,7 +149,7 @@ public final class stationsByOrder_jsp extends org.apache.jasper.runtime.HttpJsp
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_1 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_property_1.setPageContext(_jspx_page_context);
     _jspx_th_s_property_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
-    _jspx_th_s_property_1.setValue("#s.name");
+    _jspx_th_s_property_1.setValue("#s.type.id");
     int _jspx_eval_s_property_1 = _jspx_th_s_property_1.doStartTag();
     if (_jspx_th_s_property_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_1);
@@ -170,6 +174,24 @@ public final class stationsByOrder_jsp extends org.apache.jasper.runtime.HttpJsp
       return true;
     }
     _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_property_3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_iterator_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_3 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_3.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
+    _jspx_th_s_property_3.setValue("#s.name");
+    int _jspx_eval_s_property_3 = _jspx_th_s_property_3.doStartTag();
+    if (_jspx_th_s_property_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
     return false;
   }
 }

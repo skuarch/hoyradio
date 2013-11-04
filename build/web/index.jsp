@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                            
+
                 </div>
 
                 <div class="col-lg-4 text-center">
@@ -80,17 +80,17 @@
             <div class="row">
                 <div class="col-lg-12">        
                     <div class="panel panel-default _1">
-                        <div id="resultsStations" style="height: 500px" class="_1">
-                          
+                        <div id="resultsStations">
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+                
         <s:include value="/pages/application/footer.jsp" />    
         <s:include value="/pages/application/scripts.jsp"/>   
-
+        
     </body>
 
 </html>

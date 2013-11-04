@@ -1,6 +1,6 @@
 var loader = "<img src='img/ajax-loader.gif'/>";
 var start = 0;
-var maxResults = 25;
+var maxResults = 12;
 var playerStatus = "stop";
 var worker1 = null, URL = window.URL || (window.webkitURL);
 window.URL = URL;
@@ -8,7 +8,7 @@ window.URL = URL;
 $(document).ready(function() {
 
     player("http://129.21.180.18:8001/pirate-192", "stop", 1);
-    stations(0, 25);
+    stations(0, maxResults);
     getStationsByClick();
     getStationsByOrder();
 
@@ -78,6 +78,13 @@ function getStationsByOrder() {
 } // end getStationsByClick
 
 //==============================================================================
+function moreStations(){
+
+    stations(start += 12, maxResults);
+
+} // end moreStations
+
+//==============================================================================
 function player(e, t, n) {
 
     //t = "play";
@@ -125,9 +132,9 @@ function player(e, t, n) {
 
 //==============================================================================
 function playStation(t, e, n, g) {
-
-    alertify.success(g);
+    
     player(t, e, n);
+    alertify.success(g);
     setPlayer("play");
     addClick(g);
 

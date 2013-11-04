@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import model.beans.Station;
 import model.common.FoundStations;
+import model.common.ModelStations;
 import model.common.Searcher;
-import model.dao.DAO;
 import org.apache.log4j.Logger;
 
 /**
@@ -31,7 +31,7 @@ public class Search extends ActionSupport {
         try {
             
             stringToSearch = stringToSearch.toLowerCase();
-            stations = new DAO().getArrayList(new Station());
+            stations = ModelStations.getActiveStations();
             
             for (Station station : stations) {
                 new Thread(new Searcher(station, stringToSearch)).start();

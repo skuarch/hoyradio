@@ -19,8 +19,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "station")
 @NamedQueries({
-    @NamedQuery(name = "getStations", query = "from Station s where s.active = 1"),
-    @NamedQuery(name = "getStationByName", query = "from Station s where s.name = :name")
+    @NamedQuery(name = "getStations", query = "from Station s where s.active = 1 order by s.position desc"),
+    @NamedQuery(name = "getStationByName", query = "from Station s where s.name = :name"),
+    @NamedQuery(name = "getActiveStations", query = "from Station s where s.active = 1")
 })
 public class Station implements Serializable {
 

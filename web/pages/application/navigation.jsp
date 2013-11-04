@@ -13,7 +13,9 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">politicas de privacidad</a>
+                    <a href="#">
+                        politicas de privacidad
+                    </a>
                 </li>                
             </ul>
         </div><!--/.nav-collapse -->

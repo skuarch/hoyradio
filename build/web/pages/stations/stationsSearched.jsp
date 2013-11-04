@@ -20,7 +20,7 @@
     <s:else>
         <br>
         <s:iterator value="fs" var="s">                    
-            <div class="col-lg-4 alert alert-success text-center _6" onclick="playStation('<s:property value="#s.urlStreaming"/>', 'play', 1, '<s:property value="#s.name"/>');">
+            <div class="col-lg-4 alert alert-success text-center _6" onclick="playStation('<s:property value="#s.urlStreaming"/>', 'play', <s:property value="#s.type.id"/>, '<s:property value="#s.name"/>');">
                 <span class="_2">
                     <s:property value="#s.name" />
                 </span>

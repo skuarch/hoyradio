@@ -47,7 +47,10 @@ public final class metas_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<meta name=\"description\" content=\"escucha estaciones de radio en vivo por internet, radio online gratis\" />\n");
       out.write("<meta name=\"keywords\" content=\"radio internet,escuchar radio,radio gratis,radio,radios,estaciones de radio,emisoras radio,fm,am\" />\n");
       out.write("<meta name=\"author\" content=\"skuarch\"/>\n");
-      out.write("<meta name=\"robots\" content=\"index, follow\" />");
+      out.write("<meta name=\"robots\" content=\"index, follow\" />\n");
+      out.write("<meta name=\"robots\" content=\"All\" />\n");
+      out.write("<meta name=\"subject\" content=\"radio\" />\n");
+      out.write("<meta name=\"keywords\" content=\"escuchar radio, escuchar radio gratis, escuchar radio en vivo, \tescucharadio, escucha radio, escuchar la radio, escuchar la radio en vivo, escuchar la radio gratis, escuchar radio en vivo gratis, escuchar radio gratis en vivo, escuchar radio por internet, escuchar radio en vivo por internet, escuchar radio por internet gratis,radio en vivo gratis\"/>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
