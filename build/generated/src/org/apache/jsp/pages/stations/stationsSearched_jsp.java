@@ -216,18 +216,14 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
         out.write("            <div class=\"col-lg-4 alert alert-success text-center _6\" onclick=\"playStation('");
         if (_jspx_meth_s_property_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
-        out.write("', 'play', 1, '");
+        out.write("', 'play', ");
         if (_jspx_meth_s_property_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+          return true;
+        out.write(", '");
+        if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("');\">\n");
         out.write("                <span class=\"_2\">\n");
-        out.write("                    ");
-        if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
-          return true;
-        out.write("\n");
-        out.write("                </span>\n");
-        out.write("                <br>\n");
-        out.write("                <span class=\"_4\">\n");
         out.write("                    ");
         if (_jspx_meth_s_property_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
@@ -237,6 +233,13 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
         out.write("                <span class=\"_4\">\n");
         out.write("                    ");
         if (_jspx_meth_s_property_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                </span>\n");
+        out.write("                <br>\n");
+        out.write("                <span class=\"_4\">\n");
+        out.write("                    ");
+        if (_jspx_meth_s_property_6((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
         out.write("                </span>\n");
@@ -283,7 +286,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_2 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_property_2.setPageContext(_jspx_page_context);
     _jspx_th_s_property_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
-    _jspx_th_s_property_2.setValue("#s.name");
+    _jspx_th_s_property_2.setValue("#s.type.id");
     int _jspx_eval_s_property_2 = _jspx_th_s_property_2.doStartTag();
     if (_jspx_th_s_property_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_2);
@@ -319,7 +322,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_4 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_property_4.setPageContext(_jspx_page_context);
     _jspx_th_s_property_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
-    _jspx_th_s_property_4.setValue("#s.genre.name");
+    _jspx_th_s_property_4.setValue("#s.name");
     int _jspx_eval_s_property_4 = _jspx_th_s_property_4.doStartTag();
     if (_jspx_th_s_property_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
@@ -337,13 +340,31 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_5 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
     _jspx_th_s_property_5.setPageContext(_jspx_page_context);
     _jspx_th_s_property_5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
-    _jspx_th_s_property_5.setValue("#s.language.name");
+    _jspx_th_s_property_5.setValue("#s.genre.name");
     int _jspx_eval_s_property_5 = _jspx_th_s_property_5.doStartTag();
     if (_jspx_th_s_property_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
       return true;
     }
     _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_property_6(javax.servlet.jsp.tagext.JspTag _jspx_th_s_iterator_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_6 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_6.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
+    _jspx_th_s_property_6.setValue("#s.language.name");
+    int _jspx_eval_s_property_6 = _jspx_th_s_property_6.doStartTag();
+    if (_jspx_th_s_property_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
     return false;
   }
 }

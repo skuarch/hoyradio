@@ -56,7 +56,9 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"navbar-collapse collapse\">\n");
       out.write("            <ul class=\"nav navbar-nav\">\n");
       out.write("                <li>\n");
-      out.write("                    <a href=\"#\">politicas de privacidad</a>\n");
+      out.write("                    <a href=\"#\">\n");
+      out.write("                        politicas de privacidad\n");
+      out.write("                    </a>\n");
       out.write("                </li>                \n");
       out.write("            </ul>\n");
       out.write("        </div><!--/.nav-collapse -->\n");

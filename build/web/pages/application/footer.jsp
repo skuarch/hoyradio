@@ -1,3 +1,4 @@
+<%@taglib prefix="s" uri="/struts-tags"%>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -6,7 +7,7 @@
                 <div class="row">
 
                     <div class="col-lg-4 text-center">
-                        <h4>Estaciones mas escuchadas</h4>
+                        <h4><s:text name="text7"/> </h4>
                         <hr>
                         <div id="stationsByClick">
 
@@ -14,7 +15,7 @@
                     </div>
 
                     <div class="col-lg-4 text-center">
-                        <h4>Estaciones recientes</h4>
+                        <h4><s:text name="text8"/></h4>
                         <hr>
                         <div id="stationsByOrder">
 
@@ -22,9 +23,10 @@
                     </div>
 
                     <div class="col-lg-4 text-center">
-                        <h4>Siguenos en las redes sociales</h4>
+                        <h4><s:text name="text9"/></h4>
+                        <hr>
                     </div>
-
+                        
                 </div>
             </div>
         </div>

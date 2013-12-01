@@ -46,7 +46,23 @@ public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/alertify.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/jplayer.min-2.4.0.js\"></script>\n");
-      out.write("<!--<script type=\"text/javascript\" src=\"js/jquery.shoutcast.min.js\"></script>-->");
+      out.write("<!--<script type=\"text/javascript\" src=\"js/jquery.shoutcast.min.js\"></script>-->\n");
+      out.write("<script>\n");
+      out.write("    (function(i, s, o, g, r, a, m) {\n");
+      out.write("        i['GoogleAnalyticsObject'] = r;\n");
+      out.write("        i[r] = i[r] || function() {\n");
+      out.write("            (i[r].q = i[r].q || []).push(arguments)\n");
+      out.write("        }, i[r].l = 1 * new Date();\n");
+      out.write("        a = s.createElement(o),\n");
+      out.write("                m = s.getElementsByTagName(o)[0];\n");
+      out.write("        a.async = 1;\n");
+      out.write("        a.src = g;\n");
+      out.write("        m.parentNode.insertBefore(a, m)\n");
+      out.write("    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');\n");
+      out.write("\n");
+      out.write("    ga('create', 'UA-45347943-1', 'hoyradio.com');\n");
+      out.write("    ga('send', 'pageview');\n");
+      out.write("</script>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

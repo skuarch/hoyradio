@@ -8,13 +8,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Hoy Radio</a>
+            <a class="navbar-brand" href="#"><s:text name="text10"/></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="#">
-                        politicas de privacidad
+                        <s:text name="text11"/>
                     </a>
                 </li>                
             </ul>

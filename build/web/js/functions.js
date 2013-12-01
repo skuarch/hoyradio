@@ -8,9 +8,10 @@ window.URL = URL;
 $(document).ready(function() {
 
     player("http://129.21.180.18:8001/pirate-192", "stop", 1);
-    stations(0, maxResults);
-    getStationsByClick();
-    getStationsByOrder();
+    
+    setTimeout(function() {stations(0, maxResults);}, 0);
+    setTimeout(function() {getStationsByClick();}, 1);
+    setTimeout(function() {getStationsByOrder();}, 2);
 
 });
 
@@ -40,7 +41,7 @@ function beforeStations() {
 } // end nextStations
 
 //==============================================================================
-function cancelFormSubmission(){
+function cancelFormSubmission() {
     return false;
 } // end cancelFormSubmission
 
@@ -78,7 +79,7 @@ function getStationsByOrder() {
 } // end getStationsByClick
 
 //==============================================================================
-function moreStations(){
+function moreStations() {
 
     stations(start += 12, maxResults);
 
@@ -132,11 +133,11 @@ function player(e, t, n) {
 
 //==============================================================================
 function playStation(t, e, n, g) {
-    
-    player(t, e, n);
-    alertify.success(g);
-    setPlayer("play");
-    addClick(g);
+
+    setTimeout(function(){alertify.success(g);},0);
+    setTimeout(function(){player(t, e, n);},0);
+    setTimeout(function(){setPlayer("play");},0);
+    setTimeout(function(){addClick(g);},0);
 
 } // end playStation
 
