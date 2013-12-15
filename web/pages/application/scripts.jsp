@@ -2,8 +2,7 @@
 <script type="text/javascript" src="js/functions.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/alertify.min.js"></script>
-<script type="text/javascript" src="js/jplayer.min-2.4.0.js"></script>
-<!--<script type="text/javascript" src="js/jquery.shoutcast.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.jplayer.min-2.3.0.js"></script>
 <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;

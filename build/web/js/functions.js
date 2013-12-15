@@ -8,10 +8,16 @@ window.URL = URL;
 $(document).ready(function() {
 
     player("http://129.21.180.18:8001/pirate-192", "stop", 1);
-    
-    setTimeout(function() {stations(0, maxResults);}, 0);
-    setTimeout(function() {getStationsByClick();}, 1);
-    setTimeout(function() {getStationsByOrder();}, 2);
+
+    setTimeout(function() {
+        stations(0, maxResults);
+    }, 0);
+    setTimeout(function() {
+        getStationsByClick();
+    }, 1);
+    setTimeout(function() {
+        getStationsByOrder();
+    }, 2);
 
 });
 
@@ -86,58 +92,77 @@ function moreStations() {
 } // end moreStations
 
 //==============================================================================
-function player(e, t, n) {
-
-    //t = "play";
-    //e = "http://173.192.32.196";
-    //n = 1;
+function player(stationUrl, option, playerType) {
 
     $("#jquery_jplayer_1").jPlayer("stop");
     $("#jquery_jplayer_1").jPlayer("destroy");
     $("#jquery_jplayer_1").jPlayer("volume", 1);
 
-    if (n === 1) {
-        e += "/;stream/1";
+    if (playerType === 1) {
+
+        //shoutchast
+        stationUrl += "/;stream/1";
+
         $("#jquery_jplayer_1").jPlayer({
             ready: function() {
                 $(this).jPlayer("setMedia", {
-                    mp3: e
-                }).jPlayer(t);
+                    mp3: stationUrl
+
+                }).jPlayer(option);
             },
+            //repeatOff: '.jp-repeat-off',
+            //warningAlerts: true,
+            //preload: 'metadata',
             errorAlerts: false,
             swfPath: "js/",
             supplied: "mp3,m4a,aacp,oga",
+            volume: 0.4,
             solution: "flash,html",
-            wmode: "window",
-            volume: 1
+            wmode: "window"
+
         });
+
     } else {
+
+        //Icecast
         $("#jquery_jplayer_1").jPlayer({
             ready: function() {
                 $(this).jPlayer("setMedia", {
-                    oga: e
-                }).jPlayer(t);
+                    //mp3:stationUrl
+                    oga: stationUrl
+
+                }).jPlayer(option);
             },
+            //repeatOff: '.jp-repeat-off',
+            //warningAlerts: true,
+            //preload: 'metadata',
             errorAlerts: false,
             swfPath: "js/",
+            //supplied: "mp3,m4a,aacp,oga",
             supplied: "oga",
+            volume: 0.4,
             solution: "flash,html",
-            wmode: "window",
-            volume: 1
+            wmode: "window"
+
         });
+
     }
+}
 
-    //stationInformation(e.split(":")[1], e.split(":")[2]);
-
-} // end player
 
 //==============================================================================
 function playStation(t, e, n, g) {
 
-    setTimeout(function(){alertify.success(g);},0);
-    setTimeout(function(){player(t, e, n);},0);
-    setTimeout(function(){setPlayer("play");},0);
-    setTimeout(function(){addClick(g);},0);
+    alertify.success(g);
+    
+    player(t, e, n);
+    
+    setTimeout(function() {
+        setPlayer("play");
+    }, 0);
+    setTimeout(function() {
+        addClick(g);
+    }, 1);
 
 } // end playStation
 
