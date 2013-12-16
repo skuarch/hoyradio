@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <!-- datasource config -->
-        <property name="connection.url">jdbc:mysql://localhost/radio?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true</property>
+    <session-factory>        
+        <property name="connection.url">
+            jdbc:mysql://localhost/radio?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
+        </property>
         <property name="hibernate.connection.characterEncoding">UTF-8</property>
         <property name="hibernate.connection.useUnicode">true</property>
         <property name="c3p0.min_size">1</property>
@@ -23,5 +24,6 @@
         <mapping class="model.beans.StationType"/>
         <mapping class="model.beans.Station"/>
         <mapping class="model.beans.Language"/>
+        <mapping class="model.beans.Search"/>
     </session-factory>
 </hibernate-configuration>

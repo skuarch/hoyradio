@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import model.beans.Station;
 import model.common.FoundStations;
+import model.common.ModelSearch;
 import model.common.ModelStations;
 import model.common.Searcher;
 import org.apache.log4j.Logger;
@@ -30,6 +31,11 @@ public class Search extends ActionSupport {
         
         try {
             
+            //save search
+            model.beans.Search search = new model.beans.Search();
+            search.setText(stringToSearch);
+            ModelSearch.saveSearch(search);
+            
             stringToSearch = stringToSearch.toLowerCase();
             stations = ModelStations.getActiveStations();
             
@@ -44,6 +50,8 @@ public class Search extends ActionSupport {
                 System.out.println(chm.get(key));
                 fs.add((Station) chm.get(key));
             }
+            
+            
             
         } catch (Exception e) {
             logger.error("execute", e);

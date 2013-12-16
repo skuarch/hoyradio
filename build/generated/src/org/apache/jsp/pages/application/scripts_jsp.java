@@ -46,7 +46,6 @@ public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/alertify.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/jquery.jplayer.min-2.3.0.js\"></script>\n");
-      out.write("<!--<script type=\"text/javascript\" src=\"js/jquery.shoutcast.min.js\"></script>-->\n");
       out.write("<script>\n");
       out.write("    (function(i, s, o, g, r, a, m) {\n");
       out.write("        i['GoogleAnalyticsObject'] = r;\n");

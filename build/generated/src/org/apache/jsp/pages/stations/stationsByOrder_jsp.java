@@ -89,7 +89,6 @@ public final class stationsByOrder_jsp extends org.apache.jasper.runtime.HttpJsp
         _jspx_th_s_iterator_0.doInitBody();
       }
       do {
-        out.write("\n");
         out.write("    \n");
         out.write("    <a href=\"javascript:;\" onclick=\"playStation('");
         if (_jspx_meth_s_property_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))

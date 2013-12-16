@@ -11,10 +11,20 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_text_name_nobody;
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_s_text_name_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_s_text_name_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -51,13 +61,19 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <span class=\"icon-bar\"></span>\n");
       out.write("                <span class=\"icon-bar\"></span>\n");
       out.write("            </button>\n");
-      out.write("            <a class=\"navbar-brand\" href=\"#\">Hoy Radio</a>\n");
+      out.write("            <a class=\"navbar-brand\" href=\"#\">");
+      if (_jspx_meth_s_text_0(_jspx_page_context))
+        return;
+      out.write("</a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"navbar-collapse collapse\">\n");
       out.write("            <ul class=\"nav navbar-nav\">\n");
       out.write("                <li>\n");
       out.write("                    <a href=\"#\">\n");
-      out.write("                        politicas de privacidad\n");
+      out.write("                        ");
+      if (_jspx_meth_s_text_1(_jspx_page_context))
+        return;
+      out.write("\n");
       out.write("                    </a>\n");
       out.write("                </li>                \n");
       out.write("            </ul>\n");
@@ -75,5 +91,41 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_text_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_0.setParent(null);
+    _jspx_th_s_text_0.setName("text10");
+    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
+    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_1 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_1.setParent(null);
+    _jspx_th_s_text_1.setName("text11");
+    int _jspx_eval_s_text_1 = _jspx_th_s_text_1.doStartTag();
+    if (_jspx_th_s_text_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
+    return false;
   }
 }
