@@ -10,14 +10,18 @@ $(document).ready(function() {
     player("http://129.21.180.18:8001/pirate-192", "stop", 1);
 
     setTimeout(function() {
-        stations(0, maxResults);
+        playByGet();
     }, 0);
+
     setTimeout(function() {
-        getStationsByClick();
+        stations(0, maxResults);
     }, 1);
     setTimeout(function() {
-        getStationsByOrder();
+        getStationsByClick();
     }, 2);
+    setTimeout(function() {
+        getStationsByOrder();
+    }, 3);
 
 });
 
@@ -52,7 +56,20 @@ function cancelFormSubmission() {
 } // end cancelFormSubmission
 
 //==============================================================================
+function getUrlVars() {
+
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
+
+} // end getUrlVars
+
+//==============================================================================
 function getStationsByClick() {
+
+    $("#stationsByClick").html(loader);
 
     $.ajax({
         url: "stationsByClick",
@@ -70,12 +87,33 @@ function getStationsByClick() {
 //==============================================================================
 function getStationsByOrder() {
 
+    $("#stationsByOrder").html(loader);
+
     $.ajax({
         url: "stationsByOrder",
         type: "POST",
         data: {order: "desc"},
         success: function(data) {
             $("#stationsByOrder").html(data);
+        }, error: function() {
+
+        }
+
+    });
+
+} // end getStationsByClick
+
+//==============================================================================
+function getStationsByPosition() {
+
+    $("#stationsByPosition").html(loader);
+
+    $.ajax({
+        url: "stationsByPosition",
+        type: "POST",
+        data: {order: "desc"},
+        success: function(data) {
+            $("#stationsByPosition").html(data);
         }, error: function() {
 
         }
@@ -147,16 +185,50 @@ function player(stationUrl, option, playerType) {
         });
 
     }
-}
+} // end player
+
+//==============================================================================
+function playByGet() {
+
+    var id = getUrlVars()["id"];
+
+    if (id !== undefined) {
+
+        if (isNaN(id)) {
+            return;
+        }
+
+        //con el id obtener los datos necesarios y correr el player
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            url: 'getStation',
+            data: {
+                id: id,
+                param: Math.random()
+            },
+            cache: false,
+            success: function(data) {
+                player(data.url, "play", data.type);
+            },
+            error: function(e1, e2, e3) {
+
+            }
+        });
+    }
+} // end playByGet
 
 
 //==============================================================================
 function playStation(t, e, n, g) {
 
+    $("#stationTitle").html(g);
+
     alertify.success(g);
-    
+
     player(t, e, n);
-    
+
     setTimeout(function() {
         setPlayer("play");
     }, 0);
@@ -181,12 +253,12 @@ function setPlayer(command) {
 } // end setPlayer
 
 //==============================================================================
-function nextStations() {
+/*function nextStations() {
 
     start = start + maxResults;
     stations(start, maxResults);
 
-} // end nextStations
+} // end nextStations*/
 
 //==============================================================================
 function stations(start, maxResults) {
@@ -201,34 +273,12 @@ function stations(start, maxResults) {
             maxResults: maxResults
         }, success: function(data) {
             $("#resultsStations").html(data);
-            //fooTable();
         }, error: function(request, status, error) {
-            //alert(error);
         }
 
     });
 
 } // end stations
-
-//==============================================================================
-function stationInformation(t, e) {
-
-    t = t.replace("http://", "");
-    t = t.replace("//", "");
-    e = e.replace("/;stream/1", "");
-    e = e.split("/")[0];
-
-    $.SHOUTcast({
-        host: t,
-        port: e,
-        interval: 10000,
-        stats: function() {
-            //$('#songtitle').text(this.get('songtitle'));
-            alert(this.get('songtitle'));
-        }
-    }).startStats();
-
-} // end stationInformation
 
 //==============================================================================
 $("#player-img").click(
@@ -284,3 +334,11 @@ function search() {
     });
 
 } // end search
+
+//==============================================================================
+function backTopStations() {
+
+    start = 0;
+    stations(start, maxResults);
+
+} // end backTopStations

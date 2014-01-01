@@ -14,6 +14,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_if_test;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_else;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_text_name_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_iterator_var_value;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -26,6 +27,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_else = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_text_name_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_iterator_var_value = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
@@ -33,6 +35,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     _jspx_tagPool_s_property_value_nobody.release();
     _jspx_tagPool_s_if_test.release();
     _jspx_tagPool_s_else.release();
+    _jspx_tagPool_s_text_name_nobody.release();
     _jspx_tagPool_s_iterator_var_value.release();
   }
 
@@ -64,25 +67,25 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("<script type=\"text/javascript\">eval(");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${js}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write(");</script>\n");
-      out.write("<div class=\"row\">\n");
-      out.write("    <div class=\"col-lg-12 text-center\">\n");
-      out.write("        <a class=\"btn btn-primary btn-lg\" onclick=\"beforeStations();\">\n");
-      out.write("            &laquo; before\n");
-      out.write("        </a>\n");
-      out.write("        <a class=\"btn btn-primary btn-lg\" onclick=\"nextStations();\">\n");
-      out.write("            next &raquo;\n");
+      out.write("<div class=\"_7\">\n");
+      out.write("    <div class=\"row\">\n");
+      out.write("        <a class=\"btn btn-success btn-lg btn-block\" onclick=\"moreStations();\">\n");
+      out.write("            ");
+      if (_jspx_meth_s_text_0(_jspx_page_context))
+        return;
+      out.write("\n");
       out.write("        </a>\n");
       out.write("    </div>\n");
-      out.write("</div>\n");
-      out.write("<div class=\"row\">\n");
-      out.write("    ");
+      out.write("    <div class=\"row\">\n");
+      out.write("        ");
       if (_jspx_meth_s_if_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("    ");
+      out.write("        ");
       if (_jspx_meth_s_else_0(_jspx_page_context))
         return;
       out.write("\n");
+      out.write("    </div>    \n");
       out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -95,6 +98,24 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_text_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_0.setParent(null);
+    _jspx_th_s_text_0.setName("text15");
+    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
+    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+    return false;
   }
 
   private boolean _jspx_meth_s_if_0(PageContext _jspx_page_context)
@@ -115,14 +136,14 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
       }
       do {
         out.write("\n");
-        out.write("        <br>\n");
-        out.write("        <div class=\"alert alert-info\">\n");
-        out.write("            ");
+        out.write("            <br>\n");
+        out.write("            <div class=\"alert alert-info\">\n");
+        out.write("                ");
         if (_jspx_meth_s_property_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_if_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("        </div>    \n");
-        out.write("    ");
+        out.write("            </div>    \n");
+        out.write("        ");
         int evalDoAfterBody = _jspx_th_s_if_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -173,12 +194,12 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
       }
       do {
         out.write("\n");
-        out.write("        <br>\n");
-        out.write("        ");
+        out.write("            <br>\n");
+        out.write("            ");
         if (_jspx_meth_s_iterator_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("    ");
+        out.write("        ");
         int evalDoAfterBody = _jspx_th_s_else_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -213,7 +234,7 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
       }
       do {
         out.write("                    \n");
-        out.write("            <div class=\"col-lg-4 alert alert-success text-center _6\" onclick=\"playStation('");
+        out.write("                <div class=\"col-lg-4 alert alert-success text-center _6\" onclick=\"playStation('");
         if (_jspx_meth_s_property_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("', 'play', ");
@@ -223,28 +244,28 @@ public final class stationsSearched_jsp extends org.apache.jasper.runtime.HttpJs
         if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("');\">\n");
-        out.write("                <span class=\"_2\">\n");
-        out.write("                    ");
+        out.write("                    <span class=\"_2\">\n");
+        out.write("                        ");
         if (_jspx_meth_s_property_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("                </span>\n");
-        out.write("                <br>\n");
-        out.write("                <span class=\"_4\">\n");
-        out.write("                    ");
+        out.write("                    </span>\n");
+        out.write("                    <br>\n");
+        out.write("                    <span class=\"_4\">\n");
+        out.write("                        ");
         if (_jspx_meth_s_property_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("                </span>\n");
-        out.write("                <br>\n");
-        out.write("                <span class=\"_4\">\n");
-        out.write("                    ");
+        out.write("                    </span>\n");
+        out.write("                    <br>\n");
+        out.write("                    <span class=\"_4\">\n");
+        out.write("                        ");
         if (_jspx_meth_s_property_6((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("                </span>\n");
-        out.write("            </div>\n");
-        out.write("        ");
+        out.write("                    </span>\n");
+        out.write("                </div>\n");
+        out.write("            ");
         int evalDoAfterBody = _jspx_th_s_iterator_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

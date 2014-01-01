@@ -53,12 +53,16 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("<link rel=\"dns-prefetech\" href=\"http://www.hoyradio.com\"/>\n");
+      out.write("<link rel=\"canonical\" href=\"http://hoyradio.com/\" />\n");
       out.write("<link rel=\"dns-prefetech\" href=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"/>\n");
+      out.write("<link rel=\"dns-prefetech\" href=\"http://connect.facebook.net/es_LA/all.js#xfbml=1\"/>\n");
+      out.write("<link rel=\"dns-prefetech\" href=\"http://platform.twitter.com\"/>\n");
       out.write("<title>");
       if (_jspx_meth_s_property_0(_jspx_page_context))
         return;
       out.write("</title>\n");
-      out.write("<link rel=\"shortcut icon\" href=\"img/favicon.ico\" />");
+      out.write("<link rel=\"shortcut icon\" href=\"img/favicon.ico\" />\n");
+      out.write("<!--<link rel=\"image_src\" href=\"images/escucharadio.png\"/>-->");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

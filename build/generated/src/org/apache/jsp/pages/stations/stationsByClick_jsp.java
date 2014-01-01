@@ -91,7 +91,7 @@ public final class stationsByClick_jsp extends org.apache.jasper.runtime.HttpJsp
       do {
         out.write("\n");
         out.write("    \n");
-        out.write("    <a href=\"javascript:;\" onclick=\"playStation('");
+        out.write("    <a class=\"btn btn-primary btn-block btn-sm\" href=\"javascript:;\" onclick=\"playStation('");
         if (_jspx_meth_s_property_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("', 'play', ");
@@ -107,7 +107,7 @@ public final class stationsByClick_jsp extends org.apache.jasper.runtime.HttpJsp
           return true;
         out.write("\n");
         out.write("    </a>\n");
-        out.write("    <br>\n");
+        out.write("    \n");
         int evalDoAfterBody = _jspx_th_s_iterator_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

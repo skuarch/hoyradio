@@ -6,19 +6,27 @@
     
 <struts>   
     
-    <constant name="struts.devMode" value="true" />
+    <constant name="struts.devMode" value="false" />
     <constant name="struts.custom.i18n.resources" value="model.resources.i18n.application" />
-    <constant name="struts.i18n.reload" value="true" />
+    <constant name="struts.i18n.reload" value="false" />
     <constant name="struts.i18n.encoding" value="UTF-8" />
-    <constant name="struts.serve.static.browserCache" value="false" />
-    <constant name="struts.configuration.xml.reload" value="true" />
-    <constant name="struts.ognl.enableExpressionCache" value="false" />       
+    <constant name="struts.serve.static.browserCache" value="true" />
+    <constant name="struts.configuration.xml.reload" value="false" />
+    <constant name="struts.ognl.enableExpressionCache" value="true" />       
     
     <!-- servlets -->        
     <constant name="struts.action.excludePattern" value="/alarms,/alarmDispatcher,/registerDispatcher" />               
     
     <package name="default" extends="struts-default">
         
+        <global-results>
+            <result name="Exception">/pages/application/errorPage.jsp</result>
+        </global-results>
+        
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Throwable" result="Exception" />
+        </global-exception-mappings>       
+                
         <action name="stations" class="actions.stations.Stations">
             <result name="success">/pages/stations/stations.jsp</result>
             <result name="error">/pages/application/error.jsp</result>
@@ -29,6 +37,16 @@
             <result name="success">/pages/stations/stations.jsp</result>
             <result name="error">/pages/application/error.jsp</result>
             <result name="input">/pages/stations/stations.jsp</result>
+        </action>
+        
+        <action name="getStation" class="actions.stations.GetStation">
+            <result name="success">/pages/stations/getStation.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/getStation.jsp</result>
+        </action>
+        
+        <action name="locale" class="actions.application.Locale">
+            <result name="success">/index.jsp</result>            
         </action>
         
         <action name="search" class="actions.stations.Search">
@@ -47,6 +65,12 @@
             <result name="success">/pages/stations/stationsByOrder.jsp</result>
             <result name="error">/pages/application/error.jsp</result>
             <result name="input">/pages/stations/stationsByOrder.jsp</result>
+        </action>
+        
+        <action name="stationsByPosition" class="actions.stations.StationsByPosition">
+            <result name="success">/pages/stations/stationsByPosition.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/stations/stationsByPosition.jsp</result>
         </action>        
                                                                                                        
     </package>    

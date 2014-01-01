@@ -42,10 +42,10 @@ public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("<script type=\"text/javascript\" src=\"js/jquery-1.10.2.min.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"js/functions.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/alertify.min.js\"></script>\n");
       out.write("<script type=\"text/javascript\" src=\"js/jquery.jplayer.min-2.3.0.js\"></script>\n");
+      out.write("<script type=\"text/javascript\" src=\"js/functions.js\"></script>\n");
       out.write("<script>\n");
       out.write("    (function(i, s, o, g, r, a, m) {\n");
       out.write("        i['GoogleAnalyticsObject'] = r;\n");

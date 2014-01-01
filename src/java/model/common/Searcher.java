@@ -76,25 +76,35 @@ public class Searcher extends Thread {
     //==========================================================================
     private synchronized boolean searchByLetters(String stringToSearch, String keyword) {
 
-        if (keyword == null || keyword == "null" || keyword == "") {
+        if (stringToSearch == null || stringToSearch.length() < 1) {
+            return false;
+        }
+
+        if (keyword == null || keyword == "null" || keyword == "" || keyword.length() < 1) {
             return false;
         }
 
         boolean flag = false;
         int letterFound = 0;
 
-        if (stringToSearch.charAt(0) == keyword.charAt(0)) {
-            for (int i = 0; i < stringToSearch.length(); i++) {
-                for (int o = 0; o < keyword.length(); o++) {
-                    if (stringToSearch.charAt(i) == keyword.charAt(o)) {
-                        letterFound++;
+        try {
+
+            if (stringToSearch.charAt(0) == keyword.charAt(0)) {
+                for (int i = 0; i < stringToSearch.length(); i++) {
+                    for (int o = 0; o < keyword.length(); o++) {
+                        if (stringToSearch.charAt(i) == keyword.charAt(o)) {
+                            letterFound++;
+                        }
                     }
                 }
             }
-        }
-        
-        if (letterFound >= (stringToSearch.length() / 2) + 1) {            
-            flag = true;
+
+            if (letterFound >= (stringToSearch.length() / 2) + 1) {
+                flag = true;
+            }
+
+        } catch (StringIndexOutOfBoundsException sioobe) {
+            return false;
         }
 
         return flag;

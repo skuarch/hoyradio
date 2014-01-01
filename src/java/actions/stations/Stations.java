@@ -24,7 +24,7 @@ public class Stations extends ActionSupport{
     public String execute() throws Exception {
         
         try {            
-           
+            
             stations = ModelStations.getStations(start, maxResults);            
             
         } catch (Exception e) {

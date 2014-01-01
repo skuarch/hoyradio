@@ -43,11 +43,11 @@ public class Search extends ActionSupport {
                 new Thread(new Searcher(station, stringToSearch)).start();
             }
             
-            Thread.sleep(20);
-            System.out.println("found stations " + FoundStations.getFoundStations().size());
+            Thread.sleep(25);
+            //System.out.println("found stations " + FoundStations.getFoundStations().size());
             
             for (Object key : chm.keySet()) {
-                System.out.println(chm.get(key));
+                //System.out.println(chm.get(key));
                 fs.add((Station) chm.get(key));
             }
             

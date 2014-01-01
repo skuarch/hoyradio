@@ -11,6 +11,7 @@ import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 
 /**
@@ -83,6 +84,25 @@ public class DAO {
         return id;
 
     } // end create
+
+    //==========================================================================
+    public <T> ArrayList<T> orderCriteria(T type, int maxResults, String propertyName,String order) {
+
+        ArrayList<T> list = null;
+
+        Criteria criteria = session.createCriteria(type.getClass());
+        
+        if(order.equalsIgnoreCase("asc")){
+            criteria.addOrder(Order.asc(propertyName));
+        }else{
+            criteria.addOrder(Order.desc(propertyName));
+        }
+        
+        criteria.setMaxResults(maxResults);
+        list = (ArrayList<T>) criteria.list();
+
+        return list;
+    }
 
     //==========================================================================
     /**
@@ -213,8 +233,7 @@ public class DAO {
 
     //==========================================================================
     /**
-     * execute a
-     * <code>hql</code> sentence.
+     * execute a <code>hql</code> sentence.
      *
      * @param hsql String
      * @return List or null
@@ -256,8 +275,7 @@ public class DAO {
 
     //==========================================================================
     /**
-     * execute a
-     * <code>hql</code> sentence.
+     * execute a <code>hql</code> sentence.
      *
      * @param hsql String
      * @return List or null
@@ -299,10 +317,12 @@ public class DAO {
 
     //==========================================================================
     /**
-     * execute a
-     * <code>hql</code> sentence.
+     * execute a <code>hql</code> sentence.
      *
-     * @param hsql String
+     * @param <T>
+     * @param type
+     * @param hql
+     * @param maxResults
      * @return List or null
      * @throws HibernateException
      */
@@ -743,5 +763,5 @@ public class DAO {
         return rows;
 
     } // end getTotalRows
-    
+
 } // end class

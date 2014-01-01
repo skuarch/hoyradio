@@ -32,7 +32,7 @@ public class StationsByClick extends ActionSupport{
             //order = StringEscapeUtils.escapeJava(order);  
             order =  StringEscapeUtils.escapeHtml(order);            
             
-            stations = ModelStations.getStationsByClick(order, 15);
+            stations = ModelStations.getStationsByClick(order, 20);
             
         } catch (Exception e) {            
             logger.error("error", e);

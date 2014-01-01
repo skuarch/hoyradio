@@ -67,17 +67,7 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script type=\"text/javascript\">eval(");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${js}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write(");</script>\n");
-      out.write("<div class=\"_7\">\n");
-      out.write("    <div class=\"row\">\n");
-      out.write("\n");
-      out.write("        <a class=\"btn btn-primary btn-lg btn-block\" onclick=\"moreStations();\">\n");
-      out.write("            ");
-      if (_jspx_meth_s_text_0(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("        </a>\n");
-      out.write("\n");
-      out.write("    </div>\n");
+      out.write("<div class=\"_7\">    \n");
       out.write("    <div class=\"row\">\n");
       out.write("        ");
       if (_jspx_meth_s_if_0(_jspx_page_context))
@@ -87,7 +77,8 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_s_else_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("    </div></div>");
+      out.write("    </div>\n");
+      out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -99,24 +90,6 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_s_text_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:text
-    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
-    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_0.setParent(null);
-    _jspx_th_s_text_0.setName("text6");
-    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
-    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
-      return true;
-    }
-    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
-    return false;
   }
 
   private boolean _jspx_meth_s_if_0(PageContext _jspx_page_context)
@@ -136,6 +109,14 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_s_if_0.doInitBody();
       }
       do {
+        out.write("\n");
+        out.write("\n");
+        out.write("            <a class=\"btn btn-success btn-lg btn-block\" onclick=\"stations(0, 12);\">\n");
+        out.write("                ");
+        if (_jspx_meth_s_text_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_if_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("            </a>\n");
         out.write("\n");
         out.write("            <br>\n");
         out.write("            <div class=\"alert alert-info\">\n");
@@ -157,6 +138,24 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_if_test.reuse(_jspx_th_s_if_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_if_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_if_0);
+    _jspx_th_s_text_0.setName("text17");
+    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
+    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
     return false;
   }
 
@@ -195,6 +194,13 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
       do {
         out.write("\n");
+        out.write("\n");
+        out.write("            <a class=\"btn btn-primary btn-lg btn-block\" onclick=\"moreStations();\">\n");
+        out.write("                ");
+        if (_jspx_meth_s_text_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("            </a>\n");
         out.write("            <br>\n");
         out.write("            ");
         if (_jspx_meth_s_iterator_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_0, _jspx_page_context))
@@ -213,6 +219,24 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_else.reuse(_jspx_th_s_else_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_else_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_1 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_else_0);
+    _jspx_th_s_text_1.setName("text6");
+    int _jspx_eval_s_text_1 = _jspx_th_s_text_1.doStartTag();
+    if (_jspx_th_s_text_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
     return false;
   }
 

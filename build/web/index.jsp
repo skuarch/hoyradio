@@ -1,5 +1,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
+<s:url id="indexEN" namespace="/" action="locale" >
+    <s:param name="request_locale" >en</s:param>
+</s:url>
+<s:url id="indexES" namespace="/" action="locale" >
+    <s:param name="request_locale" >es</s:param>
+</s:url>
 <!DOCTYPE html>
 <html>
     <head>        
@@ -26,7 +32,7 @@
                                 google_ad_slot = "7425216398";
                                 google_ad_width = 300;
                                 google_ad_height = 250;
-                                //-->
+//-->
                             </script>
                             <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
                         </div>
@@ -39,7 +45,7 @@
 
                     <div class="panel panel-warning">                        
                         <div class="panel-body">
-                            <div style="width: 347px; height: 255px; margin: auto; ">
+                            <div style="height: 255px; margin: auto; ">
                                 <s:include value="/pages/application/player.jsp"/>
                             </div>
                         </div>
@@ -57,7 +63,7 @@
                                 google_ad_slot = "7425216398";
                                 google_ad_width = 300;
                                 google_ad_height = 250;
-                                //-->
+//-->
                             </script>
                             <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
                         </div>
@@ -87,10 +93,10 @@
                 </div>
             </div>
         </div>
-                
+
         <s:include value="/pages/application/footer.jsp" />    
-        <s:include value="/pages/application/scripts.jsp"/>   
-        
+        <s:include value="/pages/application/scripts.jsp"/>           
+
     </body>
 
 </html>
