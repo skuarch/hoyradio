@@ -111,7 +111,7 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
       do {
         out.write("\n");
         out.write("\n");
-        out.write("            <a class=\"btn btn-success btn-lg btn-block\" onclick=\"stations(0, 12);\">\n");
+        out.write("            <a class=\"btn btn-success btn-lg btn-block\" onclick=\"backTopStations();\">\n");
         out.write("                ");
         if (_jspx_meth_s_text_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_if_0, _jspx_page_context))
           return true;

@@ -52,14 +52,14 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("\n");
-      out.write("<div id=\"stationTitle\" class=\"alert well\">\n");
-      out.write("    <strong>");
+      out.write("<strong>\n");
+      out.write("    <div id=\"stationTitle\" class=\"alert well\">\n");
+      out.write("        ");
       if (_jspx_meth_s_text_0(_jspx_page_context))
         return;
-      out.write("</strong>\n");
-      out.write("</div>\n");
       out.write("\n");
+      out.write("    </div>\n");
+      out.write("</strong>\n");
       out.write("<div style=\"padding-top: 20px; padding-left: 20px; width: 346px; height: 254px;\">    \n");
       out.write("    <img id=\"player-img\" src=\"img/play.png\" width=\"128\" height=\"128\"/>\n");
       out.write("</div>\n");
