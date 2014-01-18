@@ -16,12 +16,16 @@ $(document).ready(function() {
     setTimeout(function() {
         stations(0, maxResults);
     }, 1);
+
     setTimeout(function() {
         getStationsByClick();
     }, 2);
+
     setTimeout(function() {
         getStationsByOrder();
     }, 3);
+
+
 
 });
 
@@ -150,7 +154,7 @@ function player(stationUrl, option, playerType) {
             },
             //repeatOff: '.jp-repeat-off',
             //warningAlerts: true,
-            //preload: 'metadata',
+            preload: 'metadata',
             errorAlerts: false,
             swfPath: "js/",
             supplied: "mp3,m4a,aacp,oga",
@@ -173,7 +177,7 @@ function player(stationUrl, option, playerType) {
             },
             //repeatOff: '.jp-repeat-off',
             //warningAlerts: true,
-            //preload: 'metadata',
+            preload: 'metadata',
             errorAlerts: false,
             swfPath: "js/",
             //supplied: "mp3,m4a,aacp,oga",
@@ -223,15 +227,26 @@ function playByGet() {
 //==============================================================================
 function playStation(t, e, n, g) {
 
+    $("#modalLoading").show();
+    
+    player(t, "pause", n);
+
+    setPlayer("pause");
+
     $("#stationTitle").html(g);
-
-    alertify.success(g);
-
-    player(t, e, n);
 
     setTimeout(function() {
         setPlayer("play");
-    }, 0);
+    }, 2100);
+
+    setTimeout(function() {
+        $("#modalLoading").fadeOut(500);
+    }, 3000);
+
+    setTimeout(function() {
+        alertify.success(g);
+    }, 400);
+
     setTimeout(function() {
         addClick(g);
     }, 1);
@@ -254,11 +269,11 @@ function setPlayer(command) {
 
 //==============================================================================
 /*function nextStations() {
-
-    start = start + maxResults;
-    stations(start, maxResults);
-
-} // end nextStations*/
+ 
+ start = start + maxResults;
+ stations(start, maxResults);
+ 
+ } // end nextStations*/
 
 //==============================================================================
 function stations(start, maxResults) {

@@ -10,7 +10,7 @@
 
             <br>
             <div class="alert alert-info">
-                <s:property value="getText('text4')" />
+                <s:text name="text4" />
             </div>    
         </s:if>
         <s:else>

@@ -15,10 +15,20 @@
     </head>
     <body>
 
+        <div id="modalLoading" class="_8">
+
+            <div class="_9">
+                <img src="img/484.GIF" />
+            </div>
+
+        </div>
+
         <s:include value="/pages/application/navigation.jsp"/>
 
         <div class="container">
 
+            <s:include value="/pages/application/description.jsp" />
+            
             <div class="row">
 
                 <div class="col-lg-4 text-center">
@@ -95,7 +105,7 @@
         </div>
 
         <s:include value="/pages/application/footer.jsp" />    
-        <s:include value="/pages/application/scripts.jsp"/>           
+        <s:include value="/pages/application/scripts.jsp"/> 
 
     </body>
 

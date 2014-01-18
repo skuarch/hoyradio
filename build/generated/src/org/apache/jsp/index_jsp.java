@@ -83,6 +83,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("\n");
+      out.write("        <div id=\"modalLoading\" class=\"_8\">\n");
+      out.write("\n");
+      out.write("            <div class=\"_9\">\n");
+      out.write("                <img src=\"img/484.GIF\" />\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("\n");
       out.write("        ");
       if (_jspx_meth_s_include_3(_jspx_page_context))
         return;
@@ -90,6 +98,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <div class=\"container\">\n");
       out.write("\n");
+      out.write("            ");
+      if (_jspx_meth_s_include_4(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("            \n");
       out.write("            <div class=\"row\">\n");
       out.write("\n");
       out.write("                <div class=\"col-lg-4 text-center\">\n");
@@ -118,7 +131,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"panel-body\">\n");
       out.write("                            <div style=\"height: 255px; margin: auto; \">\n");
       out.write("                                ");
-      if (_jspx_meth_s_include_4(_jspx_page_context))
+      if (_jspx_meth_s_include_5(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                            </div>\n");
@@ -151,7 +164,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"row\">\n");
       out.write("\n");
       out.write("                ");
-      if (_jspx_meth_s_include_5(_jspx_page_context))
+      if (_jspx_meth_s_include_6(_jspx_page_context))
         return;
       out.write("\n");
       out.write("\n");
@@ -172,13 +185,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\n");
       out.write("\n");
       out.write("        ");
-      if (_jspx_meth_s_include_6(_jspx_page_context))
+      if (_jspx_meth_s_include_7(_jspx_page_context))
         return;
       out.write("    \n");
       out.write("        ");
-      if (_jspx_meth_s_include_7(_jspx_page_context))
+      if (_jspx_meth_s_include_8(_jspx_page_context))
         return;
-      out.write("           \n");
+      out.write(" \n");
       out.write("\n");
       out.write("    </body>\n");
       out.write("\n");
@@ -422,7 +435,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.IncludeTag _jspx_th_s_include_4 = (org.apache.struts2.views.jsp.IncludeTag) _jspx_tagPool_s_include_value_nobody.get(org.apache.struts2.views.jsp.IncludeTag.class);
     _jspx_th_s_include_4.setPageContext(_jspx_page_context);
     _jspx_th_s_include_4.setParent(null);
-    _jspx_th_s_include_4.setValue("/pages/application/player.jsp");
+    _jspx_th_s_include_4.setValue("/pages/application/description.jsp");
     int _jspx_eval_s_include_4 = _jspx_th_s_include_4.doStartTag();
     if (_jspx_th_s_include_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_4);
@@ -440,7 +453,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.IncludeTag _jspx_th_s_include_5 = (org.apache.struts2.views.jsp.IncludeTag) _jspx_tagPool_s_include_value_nobody.get(org.apache.struts2.views.jsp.IncludeTag.class);
     _jspx_th_s_include_5.setPageContext(_jspx_page_context);
     _jspx_th_s_include_5.setParent(null);
-    _jspx_th_s_include_5.setValue("/pages/application/subnavigation.jsp");
+    _jspx_th_s_include_5.setValue("/pages/application/player.jsp");
     int _jspx_eval_s_include_5 = _jspx_th_s_include_5.doStartTag();
     if (_jspx_th_s_include_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_5);
@@ -458,7 +471,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.IncludeTag _jspx_th_s_include_6 = (org.apache.struts2.views.jsp.IncludeTag) _jspx_tagPool_s_include_value_nobody.get(org.apache.struts2.views.jsp.IncludeTag.class);
     _jspx_th_s_include_6.setPageContext(_jspx_page_context);
     _jspx_th_s_include_6.setParent(null);
-    _jspx_th_s_include_6.setValue("/pages/application/footer.jsp");
+    _jspx_th_s_include_6.setValue("/pages/application/subnavigation.jsp");
     int _jspx_eval_s_include_6 = _jspx_th_s_include_6.doStartTag();
     if (_jspx_th_s_include_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_6);
@@ -476,13 +489,31 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.IncludeTag _jspx_th_s_include_7 = (org.apache.struts2.views.jsp.IncludeTag) _jspx_tagPool_s_include_value_nobody.get(org.apache.struts2.views.jsp.IncludeTag.class);
     _jspx_th_s_include_7.setPageContext(_jspx_page_context);
     _jspx_th_s_include_7.setParent(null);
-    _jspx_th_s_include_7.setValue("/pages/application/scripts.jsp");
+    _jspx_th_s_include_7.setValue("/pages/application/footer.jsp");
     int _jspx_eval_s_include_7 = _jspx_th_s_include_7.doStartTag();
     if (_jspx_th_s_include_7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_7);
       return true;
     }
     _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_7);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_include_8(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:include
+    org.apache.struts2.views.jsp.IncludeTag _jspx_th_s_include_8 = (org.apache.struts2.views.jsp.IncludeTag) _jspx_tagPool_s_include_value_nobody.get(org.apache.struts2.views.jsp.IncludeTag.class);
+    _jspx_th_s_include_8.setPageContext(_jspx_page_context);
+    _jspx_th_s_include_8.setParent(null);
+    _jspx_th_s_include_8.setValue("/pages/application/scripts.jsp");
+    int _jspx_eval_s_include_8 = _jspx_th_s_include_8.doStartTag();
+    if (_jspx_th_s_include_8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_8);
+      return true;
+    }
+    _jspx_tagPool_s_include_value_nobody.reuse(_jspx_th_s_include_8);
     return false;
   }
 }

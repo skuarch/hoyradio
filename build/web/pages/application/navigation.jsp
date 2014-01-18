@@ -21,7 +21,7 @@
                         <s:text name="text11"/>
                     </a>
                 </li> 
-                <li class="active">
+                <li>
                     <s:a href="%{indexES}" >
                         <s:text name="text18"/>
                     </s:a>

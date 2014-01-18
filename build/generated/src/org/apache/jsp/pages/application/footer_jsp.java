@@ -136,6 +136,7 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("        </div>    \n");
       out.write("    </div>\n");
+      out.write("</div>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

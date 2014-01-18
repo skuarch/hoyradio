@@ -1,7 +1,7 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/alertify.min.js"></script>
-<script type="text/javascript" src="js/jquery.jplayer.min-2.3.0.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min-2.5.0.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 <script>
     (function(i, s, o, g, r, a, m) {

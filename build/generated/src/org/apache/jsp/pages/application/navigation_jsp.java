@@ -83,7 +83,7 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                    </a>\n");
       out.write("                </li> \n");
-      out.write("                <li class=\"active\">\n");
+      out.write("                <li>\n");
       out.write("                    ");
       if (_jspx_meth_s_a_0(_jspx_page_context))
         return;
