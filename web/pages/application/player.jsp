@@ -1,11 +1,9 @@
 <%@taglib prefix="s" uri="/struts-tags"%>
-<strong>
-    <div id="stationTitle" class="alert well">
-        <s:text name="text16" />
-    </div>
-</strong>
+<div id="stationTitle" class="alert well _10">
+    <s:text name="text16" />
+</div>
 <div style="padding-top: 20px; padding-left: 20px; width: 346px; height: 254px;">    
-    <img id="player-img" src="img/play.png" width="128" height="128"/>
+    <img id="player-img" src="img/play.png" width="128" height="128" alt=""/>
 </div>
 
 <div id="jquery_jplayer_1" class="jp-jplayer" style=""></div>

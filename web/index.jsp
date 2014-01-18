@@ -18,7 +18,7 @@
         <div id="modalLoading" class="_8">
 
             <div class="_9">
-                <img src="img/484.GIF" />
+                <img src="img/484.GIF" alt=""/>
             </div>
 
         </div>
