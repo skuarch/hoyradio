@@ -9,6 +9,7 @@ import model.common.FoundStations;
 import model.common.ModelSearch;
 import model.common.ModelStations;
 import model.common.Searcher;
+import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.log4j.Logger;
 
 /**
@@ -36,6 +37,7 @@ public class Search extends ActionSupport {
             search.setText(stringToSearch);
             ModelSearch.saveSearch(search);
             
+            stringToSearch = StringEscapeUtils.escapeJava(stringToSearch); 
             stringToSearch = stringToSearch.toLowerCase();
             stations = ModelStations.getActiveStations();
             

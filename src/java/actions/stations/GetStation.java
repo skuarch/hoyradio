@@ -22,8 +22,12 @@ public final class GetStation extends ActionSupport {
     @Override
     public String execute() throws Exception {
 
+        if (id < 0) {
+            return Action.SUCCESS;
+        }
+
         try {
-            
+
             ServletActionContext.getResponse().setContentType("text/json");
             JSONObject jsono = new JSONObject();
 

@@ -86,7 +86,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div id=\"modalLoading\" class=\"_8\">\n");
       out.write("\n");
       out.write("            <div class=\"_9\">\n");
-      out.write("                <img src=\"img/484.GIF\" />\n");
+      out.write("                <img src=\"img/484.GIF\" alt=\"\"/>\n");
       out.write("            </div>\n");
       out.write("\n");
       out.write("        </div>\n");

@@ -5,6 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.ArrayList;
 import model.beans.Station;
 import model.common.ModelStations;
+import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.log4j.Logger;
 
 /**
@@ -27,7 +28,8 @@ public class StationsByOrder extends ActionSupport {
         
         try {
         
-            //order = StringEscapeUtils.escapeJava(order);            
+            //order = StringEscapeUtils.escapeJava(order); 
+            order = StringEscapeUtils.escapeJava(order); 
             stations = ModelStations.getStationsByOrder(order,20);
             
         } catch (Exception e) {            

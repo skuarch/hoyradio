@@ -41,17 +41,15 @@ public final class metas_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
-      out.write("<meta name=\"abstract\" content=\"Escucha radio por internet gratis, puedes escuchar musica de diferentes generos, idiomas y paises, escucha tu musica favorita aqui, escucha radio en streaming\" />\n");
-      out.write("<meta http-equiv=\"x-dns-prefetech-control\" content=\"on\">\n");
-      out.write("<meta name=\"description\" content=\"escucha estaciones de radio en vivo por internet, radio online gratis\" />\n");
+      out.write("<meta name=\"description\" content=\"Escucha radio por internet gratis, puedes escuchar musica de diferentes generos, idiomas y paises, escucha tu musica favorita aqui, escucha radio en streaming\" />\n");
       out.write("<meta name=\"keywords\" content=\"radio internet,escuchar radio,radio gratis,radio,radios,estaciones de radio,emisoras radio,fm,am\" />\n");
       out.write("<meta name=\"author\" content=\"skuarch\"/>\n");
       out.write("<meta name=\"robots\" content=\"index, follow\" />\n");
       out.write("<meta name=\"robots\" content=\"All\" />\n");
-      out.write("<meta name=\"subject\" content=\"radio\" />\n");
-      out.write("<meta name=\"keywords\" content=\"escuchar radio, escuchar radio gratis, escuchar radio en vivo, \tescucharadio, escucha radio, escuchar la radio, escuchar la radio en vivo, escuchar la radio gratis, escuchar radio en vivo gratis, escuchar radio gratis en vivo, escuchar radio por internet, escuchar radio en vivo por internet, escuchar radio por internet gratis,radio en vivo gratis\"/>");
+      out.write("<meta name=\"keywords\" content=\"escuchar radio, escuchar radio gratis, escuchar radio en vivo, \tescucharadio, escucha radio, escuchar la radio, escuchar la radio en vivo, escuchar la radio gratis, escuchar radio en vivo gratis, escuchar radio gratis en vivo, escuchar radio por internet, escuchar radio en vivo por internet, escuchar radio por internet gratis,radio en vivo gratis\"/>\n");
+      out.write("<meta name=\"application-name\" content=\"hoyradio\"/>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
