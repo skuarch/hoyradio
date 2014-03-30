@@ -6,7 +6,7 @@ import model.beans.Station;
 import model.dao.DAO;
 
 /**
- * bussines logic for Station.
+ * business logic for Station.
  *
  * @author skuarch
  */
@@ -78,7 +78,7 @@ public class ModelStations {
     public static ArrayList<Station> getStationsByClick(String order, int maxResults) throws Exception {
 
         if (order == null || order.length() < 1) {
-            throw new NullPointerException("stationName is null");
+            throw new NullPointerException("order is null");
         }
 
         ArrayList<Station> stations = null;
@@ -96,7 +96,7 @@ public class ModelStations {
     public static ArrayList<Station> getStationsByOrder(String order, int maxResults) throws Exception {
 
         if (order == null || order.length() < 1) {
-            throw new NullPointerException("stationName is null");
+            throw new NullPointerException("order is null");
         }
 
         ArrayList<Station> stations = null;
@@ -114,7 +114,7 @@ public class ModelStations {
     public static ArrayList<Station> getStationsByPosition(String order, int maxResults) throws Exception {
 
         if (order == null || order.length() < 1) {
-            throw new NullPointerException("stationName is null");
+            throw new NullPointerException("order is null");
         }
 
         ArrayList<Station> stations = null;

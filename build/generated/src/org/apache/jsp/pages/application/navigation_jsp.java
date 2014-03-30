@@ -84,15 +84,14 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </a>\n");
       out.write("                </li> \n");
       out.write("                <li>\n");
-      out.write("                    <a href=\"/locale?request_locale=es\">");
-      if (_jspx_meth_s_text_2(_jspx_page_context))
+      out.write("                    ");
+      if (_jspx_meth_s_a_0(_jspx_page_context))
         return;
-      out.write("</a>\n");
-      out.write("                    \n");
+      out.write("\n");
       out.write("                </li> \n");
       out.write("                <li>\n");
       out.write("                    ");
-      if (_jspx_meth_s_a_0(_jspx_page_context))
+      if (_jspx_meth_s_a_1(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                </li> \n");
@@ -149,24 +148,6 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_s_text_2(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:text
-    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_2 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
-    _jspx_th_s_text_2.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_2.setParent(null);
-    _jspx_th_s_text_2.setName("text18");
-    int _jspx_eval_s_text_2 = _jspx_th_s_text_2.doStartTag();
-    if (_jspx_th_s_text_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
-      return true;
-    }
-    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
-    return false;
-  }
-
   private boolean _jspx_meth_s_a_0(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -175,7 +156,7 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.ui.AnchorTag _jspx_th_s_a_0 = (org.apache.struts2.views.jsp.ui.AnchorTag) _jspx_tagPool_s_a_href.get(org.apache.struts2.views.jsp.ui.AnchorTag.class);
     _jspx_th_s_a_0.setPageContext(_jspx_page_context);
     _jspx_th_s_a_0.setParent(null);
-    _jspx_th_s_a_0.setHref("%{indexEN}");
+    _jspx_th_s_a_0.setHref("%{indexES}");
     int _jspx_eval_s_a_0 = _jspx_th_s_a_0.doStartTag();
     if (_jspx_eval_s_a_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_s_a_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -186,7 +167,7 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
       do {
         out.write("\n");
         out.write("                        ");
-        if (_jspx_meth_s_text_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_a_0, _jspx_page_context))
+        if (_jspx_meth_s_text_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_a_0, _jspx_page_context))
           return true;
         out.write("\n");
         out.write("                    ");
@@ -205,14 +186,70 @@ public final class navigation_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_s_text_3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_a_0, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_text_2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_a_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_2 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_2.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_a_0);
+    _jspx_th_s_text_2.setName("text18");
+    int _jspx_eval_s_text_2 = _jspx_th_s_text_2.doStartTag();
+    if (_jspx_th_s_text_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_a_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:a
+    org.apache.struts2.views.jsp.ui.AnchorTag _jspx_th_s_a_1 = (org.apache.struts2.views.jsp.ui.AnchorTag) _jspx_tagPool_s_a_href.get(org.apache.struts2.views.jsp.ui.AnchorTag.class);
+    _jspx_th_s_a_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_a_1.setParent(null);
+    _jspx_th_s_a_1.setHref("%{indexEN}");
+    int _jspx_eval_s_a_1 = _jspx_th_s_a_1.doStartTag();
+    if (_jspx_eval_s_a_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_s_a_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.pushBody();
+        _jspx_th_s_a_1.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_s_a_1.doInitBody();
+      }
+      do {
+        out.write("\n");
+        out.write("                        ");
+        if (_jspx_meth_s_text_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_a_1, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                    ");
+        int evalDoAfterBody = _jspx_th_s_a_1.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+      if (_jspx_eval_s_a_1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
+        out = _jspx_page_context.popBody();
+    }
+    if (_jspx_th_s_a_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_a_href.reuse(_jspx_th_s_a_1);
+      return true;
+    }
+    _jspx_tagPool_s_a_href.reuse(_jspx_th_s_a_1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_a_1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:text
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_3 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_3.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_a_0);
+    _jspx_th_s_text_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_a_1);
     _jspx_th_s_text_3.setName("text19");
     int _jspx_eval_s_text_3 = _jspx_th_s_text_3.doStartTag();
     if (_jspx_th_s_text_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

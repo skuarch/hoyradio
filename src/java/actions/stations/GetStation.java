@@ -32,6 +32,11 @@ public final class GetStation extends ActionSupport {
             JSONObject jsono = new JSONObject();
 
             Station s = ModelStations.getStation(id);
+            
+            if(s == null){
+                json = "";
+            }
+            
             jsono.accumulate("name", s.getName());
             jsono.accumulate("url", s.getUrlStreaming());
             jsono.accumulate("type", s.getType().getId());

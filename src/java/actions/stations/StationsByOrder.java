@@ -27,9 +27,9 @@ public class StationsByOrder extends ActionSupport {
     public String execute() throws Exception {        
         
         try {
-        
-            //order = StringEscapeUtils.escapeJava(order); 
-            order = StringEscapeUtils.escapeJava(order); 
+            
+            //order = StringEscapeUtils.escapeHtml(order);
+            //order = StringEscapeUtils.escapeJavaScript(order);
             stations = ModelStations.getStationsByOrder(order,20);
             
         } catch (Exception e) {            
