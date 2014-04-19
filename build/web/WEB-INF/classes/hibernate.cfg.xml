@@ -3,7 +3,7 @@
 <hibernate-configuration>
     <session-factory>        
         <property name="connection.url">
-            jdbc:mysql://localhost/radio?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
+            jdbc:mysql://hoyradio.com/radio?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
         </property>
         <property name="hibernate.connection.characterEncoding">UTF-8</property>
         <property name="hibernate.connection.useUnicode">true</property>

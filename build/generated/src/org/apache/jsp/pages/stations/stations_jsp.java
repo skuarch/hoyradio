@@ -11,11 +11,11 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_if_test;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_else;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_text_name_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_iterator_var_value;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_if_test;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_text_name_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_else;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -24,19 +24,19 @@ public final class stations_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_else = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_text_name_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_iterator_var_value = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_text_name_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_else = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_s_property_value_nobody.release();
-    _jspx_tagPool_s_if_test.release();
-    _jspx_tagPool_s_else.release();
-    _jspx_tagPool_s_text_name_nobody.release();
     _jspx_tagPool_s_iterator_var_value.release();
+    _jspx_tagPool_s_if_test.release();
+    _jspx_tagPool_s_property_value_nobody.release();
+    _jspx_tagPool_s_text_name_nobody.release();
+    _jspx_tagPool_s_else.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)

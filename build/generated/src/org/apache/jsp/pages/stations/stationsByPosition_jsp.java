@@ -11,8 +11,8 @@ public final class stationsByPosition_jsp extends org.apache.jasper.runtime.Http
 
   private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_iterator_var_value;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -21,13 +21,13 @@ public final class stationsByPosition_jsp extends org.apache.jasper.runtime.Http
   }
 
   public void _jspInit() {
-    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_iterator_var_value = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_s_property_value_nobody.release();
     _jspx_tagPool_s_iterator_var_value.release();
+    _jspx_tagPool_s_property_value_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)

@@ -57,12 +57,12 @@ public final class description_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <div class=\"row\">\n");
       out.write("\n");
       out.write("        <div class=\"col-lg-12 alert alert-warning text-center\">\n");
-      out.write("            <strong>\n");
+      out.write("            <h1>\n");
       out.write("                ");
       if (_jspx_meth_s_text_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("            </strong>\n");
+      out.write("            </h1>\n");
       out.write("        </div>\n");
       out.write("\n");
       out.write("    </div>\n");

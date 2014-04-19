@@ -4,9 +4,9 @@
     <div class="row">
 
         <div class="col-lg-12 alert alert-warning text-center">
-            <strong>
+            <h1>
                 <s:text name="text20" />
-            </strong>
+            </h1>
         </div>
 
     </div>
