@@ -61,9 +61,7 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<div style=\"padding-top: 20px; padding-left: 20px; width: 346px; height: 254px;\">    \n");
       out.write("    <img id=\"player-img\" src=\"img/play.png\" width=\"128\" height=\"128\" alt=\"\"/>\n");
       out.write("</div>\n");
-      out.write("\n");
       out.write("<div id=\"jquery_jplayer_1\" class=\"jp-jplayer\" style=\"\"></div>\n");
-      out.write("\n");
       out.write("<div id=\"jp_container_2\" class=\"jp-audio\">\n");
       out.write("    <div class=\"jp-type-single\">\n");
       out.write("        <div class=\"jp-gui jp-interface\">\n");
@@ -101,7 +99,6 @@ public final class player_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <span></span>                            \n");
       out.write("        </div>\n");
       out.write("    </div>\n");
-      out.write("\n");
       out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

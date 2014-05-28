@@ -146,7 +146,7 @@ var i=f.call(arguments,1);var h=13;return d.async(function l(){var m=this;var n=
 
 var loader = "<img src='img/ajax-loader.gif'/>";
 var start = 0;
-var maxResults = 12;
+var maxResults = 15;
 var playerStatus = "stop";
 
 //==============================================================================
@@ -348,23 +348,7 @@ function playStation(t, e, n, g) {
 
     setPlayer("pause");
 
-    $("#stationTitle").html(g);
-
-    /*setTimeout(function() {
-        setPlayer("play");
-    }, 1500);
-
-    setTimeout(function() {
-        $("#modalLoading").fadeOut(500);
-    }, 3000);
-
-    setTimeout(function() {
-        alertify.success(g);
-    }, 400);
-
-    setTimeout(function() {
-        addClick(g);
-    }, 4000);*/
+    $("#stationTitle").html(g);   
     
     $.async(function() {
         setTimeout(function() {
@@ -381,7 +365,7 @@ function playStation(t, e, n, g) {
     $.async(function() {
         setTimeout(function() {
             alertify.success(g);
-        }, 400);
+        }, 450);
     });
 
     $.async(function() {
@@ -490,22 +474,6 @@ function backTopStations() {
 $(document).ready(function() {
 
     player("http://129.21.180.18:8001/pirate-192", "stop", 1);
-
-    /*setTimeout(function() {
-        playByGet();
-    }, 0);
-
-    setTimeout(function() {
-        stations(0, maxResults);
-    }, 1);
-
-    setTimeout(function() {
-        getStationsByClick();
-    }, 22);
-
-    setTimeout(function() {
-        getStationsByOrder();
-    }, 33);*/
     
     $.async(function() {
         setTimeout(function() {
@@ -531,4 +499,19 @@ $(document).ready(function() {
             getStationsByOrder();
         }, 150);
     });
+    
+    adBlocker();
+    
 });
+
+function adBlocker() {
+    if (!document.getElementsByClassName) {
+        return
+    }
+    var a = document.getElementsByClassName("afs_ads"), b = a[a.length - 1];
+    if (!b || b.innerHTML.length == 0 || b.clientHeight === 0) {
+        window.location.href = "adblocker";
+    } else {
+        b.style.display = "none";
+    }
+}

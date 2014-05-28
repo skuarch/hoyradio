@@ -31,7 +31,7 @@ public class StationsByClick extends ActionSupport{
         
             //order = StringEscapeUtils.escapeJava(order);  
             //order =  StringEscapeUtils.escapeHtml(order);            
-            System.out.println("que onda con esto: " + order);
+            //System.out.println("que onda con esto: " + order);
             stations = ModelStations.getStationsByClick("desc", 20);
             
         } catch (Exception e) {            

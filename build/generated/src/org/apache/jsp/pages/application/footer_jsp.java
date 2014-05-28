@@ -56,9 +56,7 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <div class=\"row\">\n");
       out.write("        <div class=\"col-lg-12\">\n");
       out.write("            <div class=\"panel panel-default _1\">\n");
-      out.write("\n");
       out.write("                <div class=\"row\">\n");
-      out.write("\n");
       out.write("                    <div class=\"col-lg-4 text-center\">\n");
       out.write("                        <h4>");
       if (_jspx_meth_s_text_0(_jspx_page_context))
@@ -66,10 +64,8 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" </h4>\n");
       out.write("                        <hr>\n");
       out.write("                        <div id=\"stationsByClick\">\n");
-      out.write("\n");
       out.write("                        </div>                    \n");
       out.write("                    </div>\n");
-      out.write("\n");
       out.write("                    <div class=\"col-lg-4 text-center\">\n");
       out.write("                        <h4>");
       if (_jspx_meth_s_text_1(_jspx_page_context))
@@ -77,17 +73,14 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</h4>\n");
       out.write("                        <hr>\n");
       out.write("                        <div id=\"stationsByOrder\">\n");
-      out.write("\n");
       out.write("                        </div>                    \n");
       out.write("                    </div>\n");
-      out.write("\n");
       out.write("                    <div class=\"col-lg-4 text-center\">\n");
       out.write("                        <h4>");
       if (_jspx_meth_s_text_2(_jspx_page_context))
         return;
       out.write("</h4>\n");
       out.write("                        <hr>\n");
-      out.write("\n");
       out.write("                        <a href=\"https://twitter.com/hoy_radio\" class=\"twitter-follow-button\" data-show-count=\"false\" data-lang=\"es\">Seguir a @hoy_radio</a>\n");
       out.write("                        <script>!function(d, s, id) {\n");
       out.write("                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';\n");
@@ -99,10 +92,8 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                }\n");
       out.write("                            }(document, 'script', 'twitter-wjs');\n");
       out.write("                        </script>\n");
-      out.write("\n");
       out.write("                        <br/>\n");
       out.write("                        <br/>\n");
-      out.write("\n");
       out.write("                        <div id=\"fb-root\"></div>\n");
       out.write("                        <script>(function(d, s, id) {\n");
       out.write("                                var js, fjs = d.getElementsByTagName(s)[0];\n");
@@ -115,10 +106,8 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            }(document, 'script', 'facebook-jssdk'));\n");
       out.write("                        </script>\n");
       out.write("                        <div class=\"fb-like-box\" data-href=\"http://www.facebook.com/hoyradio\" data-colorscheme=\"light\" data-show-faces=\"true\" data-header=\"true\" data-stream=\"false\" data-show-border=\"true\"></div>\n");
-      out.write("\n");
       out.write("                        <br/>\n");
       out.write("                        <br/>\n");
-      out.write("\n");
       out.write("                        <a class=\"twitter-timeline\" href=\"https://twitter.com/hoy_radio\" data-widget-id=\"414839500141916161\">Tweets por @hoy_radio</a>\n");
       out.write("                        <script>!function(d, s, id) {\n");
       out.write("                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';\n");
@@ -130,7 +119,6 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                }\n");
       out.write("                            }(document, \"script\", \"twitter-wjs\");\n");
       out.write("                        </script>\n");
-      out.write("\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");

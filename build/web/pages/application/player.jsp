@@ -5,9 +5,7 @@
 <div style="padding-top: 20px; padding-left: 20px; width: 346px; height: 254px;">    
     <img id="player-img" src="img/play.png" width="128" height="128" alt=""/>
 </div>
-
 <div id="jquery_jplayer_1" class="jp-jplayer" style=""></div>
-
 <div id="jp_container_2" class="jp-audio">
     <div class="jp-type-single">
         <div class="jp-gui jp-interface">
@@ -45,5 +43,4 @@
             <span></span>                            
         </div>
     </div>
-
 </div>

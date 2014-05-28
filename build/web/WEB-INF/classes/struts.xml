@@ -26,7 +26,13 @@
         <global-exception-mappings>
             <exception-mapping exception="java.lang.Throwable" result="Exception" />
         </global-exception-mappings>       
-                
+        
+        <action name="adblocker" class="actions.application.AdBlocker">
+            <result name="success">/pages/application/adblocker.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/application/adblocker.jsp</result>
+        </action>        
+                                
         <action name="stations" class="actions.stations.Stations">
             <result name="success">/pages/stations/stations.jsp</result>
             <result name="error">/pages/application/error.jsp</result>

@@ -55,7 +55,6 @@ public final class description_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<div class=\"container\">\n");
       out.write("    <div class=\"row\">\n");
-      out.write("\n");
       out.write("        <div class=\"col-lg-12 alert alert-warning text-center\">\n");
       out.write("            <h1>\n");
       out.write("                ");
@@ -64,7 +63,6 @@ public final class description_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("            </h1>\n");
       out.write("        </div>\n");
-      out.write("\n");
       out.write("    </div>\n");
       out.write("</div>");
     } catch (Throwable t) {
