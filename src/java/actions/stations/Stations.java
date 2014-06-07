@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.ArrayList;
 import model.beans.Station;
-import model.common.StationContainerManager;
+import model.common.StationContainer;
 import org.apache.log4j.Logger;
 
 /**
@@ -16,7 +16,7 @@ public class Stations extends ActionSupport{
     private static final Logger logger = Logger.getLogger(Stations.class);    
     private String js = null;
     private int start = 0;
-    private int maxResults = 0;
+    private int maxResults = 0;    
     private ArrayList<Station> stations = null;
     
     //==========================================================================
@@ -25,11 +25,12 @@ public class Stations extends ActionSupport{
         
         try {
             
-            stations = StationContainerManager.getStationsLimit(start, start + maxResults);
+            stations = StationContainer.getStationsLimit(start, start + maxResults);
             
         } catch (Exception e) {
             logger.error("execute",e);
-            js = "alertify.alert('"+getText("text4")+"')";
+            js = "alertify.log('"+getText("text4")+"')";
+            stations = new ArrayList<>();
         }
         
         return Action.SUCCESS;        

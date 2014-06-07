@@ -25,5 +25,10 @@
         <error-code>500</error-code>
         <location>/pages/application/errorPage500.jsp</location>
     </error-page>
+    
+    <context-param>
+        <param-name>LOCALE</param-name>
+        <param-value>es</param-value>
+    </context-param>
        
 </web-app>

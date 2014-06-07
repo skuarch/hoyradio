@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-lg-12">        
                     <div class="panel panel-default _1">
-                        <div id="resultsStations">
+                        <div class="_7" id="resultsStations">
                         </div>
                     </div>
                 </div>

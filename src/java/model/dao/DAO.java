@@ -99,7 +99,7 @@ public class DAO {
         }
         
         criteria.setMaxResults(maxResults);
-        list = (ArrayList<T>) criteria.list();
+        list = new ArrayList(criteria.list());
 
         return list;
     }
@@ -424,7 +424,7 @@ public class DAO {
 
             query = session.getNamedQuery(queryName);
             query.setProperties(type);
-            arrayList = (ArrayList<T>) query.list();
+            arrayList = new ArrayList(query.list());
 
         } catch (HibernateException he) {
             throw he;
@@ -631,7 +631,7 @@ public class DAO {
                 query.setString(key, value);
             }
 
-            list = (ArrayList<T>) query.list();
+            list = new ArrayList(query.list());
 
         } catch (HibernateException he) {
             throw he;
@@ -663,7 +663,7 @@ public class DAO {
             query.setFirstResult(start);
             query.setMaxResults(maxResults);
             query.setProperties(type);
-            arrayList = (ArrayList<T>) query.list();
+            arrayList = new ArrayList(query.list());
 
         } catch (HibernateException he) {
             throw he;
@@ -695,7 +695,7 @@ public class DAO {
             query.setFirstResult(start);
             query.setMaxResults(maxResults);
             query.setProperties(type);
-            list = (List<T>) query.list();
+            list = query.list();
 
         } catch (HibernateException he) {
             throw he;
