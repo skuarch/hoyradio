@@ -10,7 +10,6 @@ import model.common.ModelSearch;
 import model.common.ModelStations;
 import model.common.Searcher;
 import model.util.StringUtilities;
-import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.log4j.Logger;
 
 /**
@@ -43,17 +42,15 @@ public class Search extends ActionSupport {
             stringToSearch = stringToSearch.toLowerCase();
             stations = ModelStations.getActiveStations();
 
-            for (Station station : stations) {
+            stations.stream().forEach((station) -> {
                 new Thread(new Searcher(station, stringToSearch)).start();
-            }
+            });
 
             Thread.sleep(25);
             //System.out.println("found stations " + FoundStations.getFoundStations().size());
-
-            for (Object key : chm.keySet()) {
-                //System.out.println(chm.get(key));
+            chm.keySet().stream().forEach((key) -> {
                 fs.add((Station) chm.get(key));
-            }
+            });
 
         } catch (Exception e) {
             logger.error("execute", e);

@@ -29,7 +29,7 @@
         
         <!-- using glassfish pool -->
         <property name="show_sql">false</property>
-        <property name="hibernate.connection.datasource">jdbc/hoyradio</property>
+        <property name="hibernate.connection.datasource">jdbc/radio</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>        
         <!--<property name="hbm2ddl.auto">update</property> -->
         <mapping class="model.beans.Genre"/>
