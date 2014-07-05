@@ -72,7 +72,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("          \n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    <body>           \n");
       out.write("        ");
       if (_jspx_meth_s_include_4(_jspx_page_context))
         return;
@@ -145,8 +145,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"_9\">\n");
       out.write("                <img src=\"img/484.GIF\" alt=\"\" height=\"128\" width=\"128\"/>\n");
       out.write("            </div>\n");
-      out.write("        </div>\n");
-      out.write("        <div class=\"afs_ads\">&nbsp;</div>        \n");
+      out.write("        </div>  \n");
+      out.write("        <div class=\"afs_ads\">&nbsp;</div>\n");
       out.write("    </body>\n");
       out.write("</html>");
     } catch (Throwable t) {

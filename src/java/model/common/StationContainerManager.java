@@ -10,7 +10,7 @@ import model.beans.Station;
  */
 public class StationContainerManager {
     
-    private static ArrayList<Station> stations = StationContainer.getStations();
+    private static final ArrayList<Station> stations = StationContainer.getStations();
     
     //==========================================================================
     private StationContainerManager(){
@@ -61,7 +61,8 @@ public class StationContainerManager {
 
         } else {
 
-            stations = s;
+            stations.clear();
+            stations.addAll(s);
 
         }
 

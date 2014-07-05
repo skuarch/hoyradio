@@ -132,10 +132,10 @@ public class ModelStations {
     //==========================================================================
     public static ArrayList<Station> getActiveStations() throws Exception {
 
-        ArrayList<Station> stations = new DAO().query(new Station(), "getActiveStations");
+        ArrayList<Station> stations = new DAO().query(new Station(), "getActiveStations",true);
 
         if (stations == null || stations.size() < 1 || stations.get(0) == null) {
-            stations = new ArrayList<Station>();
+            stations = new ArrayList<>();
         }
 
         return stations;

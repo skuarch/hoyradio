@@ -8,7 +8,7 @@
         <s:include value="/pages/application/styles.jsp"/>   
         <s:include value="/pages/application/header.jsp"/>          
     </head>
-    <body>
+    <body>           
         <s:include value="/pages/application/navigation.jsp"/>
         <div class="container">
             <s:include value="/pages/application/description.jsp" />
@@ -57,7 +57,7 @@
             <div class="_9">
                 <img src="img/484.GIF" alt="" height="128" width="128"/>
             </div>
-        </div>
-        <div class="afs_ads">&nbsp;</div>        
+        </div>  
+        <div class="afs_ads">&nbsp;</div>
     </body>
 </html>

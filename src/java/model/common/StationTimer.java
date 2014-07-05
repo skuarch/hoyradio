@@ -1,8 +1,6 @@
 package model.common;
 
 import java.util.TimerTask;
-import model.beans.Station;
-import model.dao.DAO;
 import org.apache.log4j.Logger;
 
 /**
@@ -24,7 +22,7 @@ public class StationTimer extends TimerTask {
         try {
             
             logger.info("updating stations");
-            StationContainer.setStations(new DAO().getArrayList(new Station()));
+            StationContainerManager.setStations(ModelStations.getActiveStations());
             
         } catch (Exception ex) {
             logger.error(" error ", ex);

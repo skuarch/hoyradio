@@ -6,6 +6,9 @@
             <h1>
                 <s:text name="text20" />
             </h1>
+            <p>
+                <s:text name="text24"/>
+            </p>
         </div>
     </div>
 </div>

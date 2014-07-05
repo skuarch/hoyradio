@@ -22,6 +22,7 @@ public class StationContainer {
 
     //==========================================================================
     public static void setStations(ArrayList<Station> s) {
+        stations.clear();
         stations = s;
     }
 

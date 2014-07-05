@@ -422,8 +422,49 @@ public class DAO {
 
         try {
 
-            query = session.getNamedQuery(queryName);
-            query.setProperties(type);
+            query = session.getNamedQuery(queryName);            
+            query.setProperties(type);            
+            arrayList = new ArrayList(query.list());
+
+        } catch (HibernateException he) {
+            throw he;
+        } finally {
+            HibernateUtil.closeSession(session);
+        }
+
+        return arrayList;
+
+    } // end query
+    
+    //==========================================================================
+    /**
+     * @param <T> type
+     * @param queryName String
+     * @return List or null
+     * @throws HibernateException
+     */
+    public <T> ArrayList<T> query(T type, String queryName,boolean ignoreCache) throws HibernateException {
+
+        if (queryName == null || queryName.length() < 1) {
+            throw new NullPointerException("queryName is null or empty");
+        }
+
+        if (type == null) {
+            throw new NullPointerException("type is null");
+        }
+
+        Query query = null;
+        ArrayList<T> arrayList = null;
+
+        try {
+            
+            query = session.getNamedQuery(queryName);            
+            
+            if(ignoreCache){
+                query.setCacheMode(CacheMode.IGNORE);
+            }
+            
+            query.setProperties(type);            
             arrayList = new ArrayList(query.list());
 
         } catch (HibernateException he) {

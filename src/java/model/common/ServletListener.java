@@ -2,12 +2,10 @@ package model.common;
 
 import java.util.ArrayList;
 import java.util.Timer;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 import model.beans.Station;
-import model.dao.DAO;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,7 +16,7 @@ import org.apache.log4j.Logger;
 public class ServletListener implements ServletContextListener {
 
     public static final Logger logger = Logger.getLogger(ServletListener.class);
-    public static ArrayList<Station> stations = null;
+    public static ArrayList<Station> stations = new ArrayList<>(200);
     private Timer timer = null;
 
     //==========================================================================
@@ -36,8 +34,8 @@ public class ServletListener implements ServletContextListener {
             timer.scheduleAtFixedRate(new StationTimer(), 0, 1000 * 60 * 60);
             
             //start the stations array
-            stations = new DAO().getArrayList(new Station());
-            StationContainer.setStations(stations);               
+            stations = ModelStations.getActiveStations();
+            StationContainerManager.setStations(stations);               
 
         } catch (Exception e) {
             logger.error("contextInitialized", e);
@@ -49,6 +47,7 @@ public class ServletListener implements ServletContextListener {
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
         
+        stations.clear();
         stations = null;        
         timer.cancel();
         timer = null;

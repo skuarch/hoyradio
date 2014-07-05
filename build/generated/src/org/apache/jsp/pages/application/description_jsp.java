@@ -62,6 +62,12 @@ public final class description_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n");
       out.write("            </h1>\n");
+      out.write("            <p>\n");
+      out.write("                ");
+      if (_jspx_meth_s_text_1(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("            </p>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
       out.write("</div>");
@@ -93,6 +99,24 @@ public final class description_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_1 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_1.setParent(null);
+    _jspx_th_s_text_1.setName("text24");
+    int _jspx_eval_s_text_1 = _jspx_th_s_text_1.doStartTag();
+    if (_jspx_th_s_text_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
     return false;
   }
 }
