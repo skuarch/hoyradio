@@ -5,10 +5,10 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.ArrayList;
 import java.util.Map;
 import model.beans.Station;
-import model.common.FoundStations;
-import model.common.ModelSearch;
-import model.common.ModelStations;
-import model.common.Searcher;
+import model.logic.FoundStations;
+import model.database.ModelSearch;
+import model.database.ModelStations;
+import model.logic.Searcher;
 import model.util.StringUtilities;
 import org.apache.log4j.Logger;
 

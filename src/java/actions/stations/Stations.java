@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.ArrayList;
 import model.beans.Station;
-import model.common.StationContainerManager;
+import model.logic.container.StationContainerManager;
 import org.apache.log4j.Logger;
 
 /**

@@ -4,6 +4,7 @@
  */
 package model.common;
 
+import model.database.ModelStations;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;

@@ -4,7 +4,7 @@ import antlr.StringUtils;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import model.beans.Station;
-import model.common.ModelStations;
+import model.database.ModelStations;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.log4j.Logger;
 

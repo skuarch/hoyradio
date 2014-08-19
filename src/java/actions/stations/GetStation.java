@@ -3,7 +3,7 @@ package actions.stations;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import model.beans.Station;
-import model.common.ModelStations;
+import model.database.ModelStations;
 import org.apache.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONObject;
@@ -35,6 +35,7 @@ public final class GetStation extends ActionSupport {
             
             if(s == null){
                 json = "";
+                s = new Station();
             }
             
             jsono.accumulate("name", s.getName());

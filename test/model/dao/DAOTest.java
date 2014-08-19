@@ -4,6 +4,7 @@
  */
 package model.dao;
 
+import model.database.DAO;
 import model.beans.Genre;
 import org.junit.After;
 import org.junit.AfterClass;
